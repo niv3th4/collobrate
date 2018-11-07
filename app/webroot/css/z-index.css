@@ -1,0 +1,7 @@
+#overlayScreen{
+    z-index: 99;
+}
+
+#dialog, #assign-dialog{
+    z-index: 999;
+}

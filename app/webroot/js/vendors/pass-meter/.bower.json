@@ -1,0 +1,15 @@
+{
+  "name": "pass-meter",
+  "homepage": "https://github.com/syntaqx/pass-meter",
+  "version": "1.0.0",
+  "_release": "1.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.0",
+    "commit": "ab18508b8daa96325dc5361bbea0a28997b7f9c5"
+  },
+  "_source": "git://github.com/syntaqx/pass-meter.git",
+  "_target": "~1.0.0",
+  "_originalSource": "pass-meter",
+  "_direct": true
+}

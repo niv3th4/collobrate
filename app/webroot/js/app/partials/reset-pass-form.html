@@ -1,0 +1,24 @@
+<form action="" name="reset_pass_form" id="reset_pass_form">
+    <table class="signup-form">
+        <tr>
+            <td>
+                <p class="sign-txt">Enter Password</p>
+                <input type="password" class="sign-txtbox tooltip-pass" id="reset_pass" name="reset_pass" ng-model="login.reset_pass"  required autofocus />
+                <span ng-class="passStrength" class="pass-strength">{{ passStrength }}</span>
+                <div class="pass-tooltip">
+                    <p>Use atleat 8 characters.Don’t use something too obvious</p>
+                </div>
+            </td>
+            <td>
+                <p class="sign-txt">Confirm Password</p>
+                <input type="password" class="sign-txtbox" id="reset_pass_confirm" name="reset_pass_confirm" ng-model="login.reset_pass_confirm" required />
+                <img src="images/landing/ryt.png" class="conf-pass" alt="" ng-if="validPass">
+            </td>
+        </tr>
+    </table>
+    <div re-captcha ng-model="login.captcha" class="reCaptcha"></div>
+    <div class="form-btn clearfix">
+        <button class="next-btn" value="" type="submit" id="submit" >Next</button>
+    </div>
+
+</form>

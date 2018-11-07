@@ -1,0 +1,142 @@
+{
+    "id": "e0dc3b37-ef89-d26b-aa54-107fa89d7316",
+    "name": "People",
+    "timestamp": 1406768880112,
+    "requests": [
+        {
+            "collectionId": "e0dc3b37-ef89-d26b-aa54-107fa89d7316",
+            "id": "170d8788-18f5-8d9f-c934-d0306a49beb5",
+            "name": "removeModerator",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/People/removeModerator.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e57063-4fb0-4fdf-8b2f-10530130a31c\n",
+            "data": [
+                {
+                    "key": "ids",
+                    "value": "1,2,3,4,5,6",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407547688927
+        },
+        {
+            "collectionId": "e0dc3b37-ef89-d26b-aa54-107fa89d7316",
+            "id": "51e89bea-1080-ebf9-7cf2-b77d54333f7c",
+            "name": "setModerator",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/People/setModerator.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e57063-4fb0-4fdf-8b2f-10530130a31c\n",
+            "data": [
+                {
+                    "key": "ids",
+                    "value": "1,2,3,4,5,6",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407547683386
+        },
+        {
+            "collectionId": "e0dc3b37-ef89-d26b-aa54-107fa89d7316",
+            "id": "86a6143d-bba8-b84c-1d1e-8dc1453fdd65",
+            "name": "removeRestricted",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/People/removeRestricted.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e57063-4fb0-4fdf-8b2f-10530130a31c\n",
+            "data": [
+                {
+                    "key": "ids",
+                    "value": "1,2,3,4,5,6",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407547704655
+        },
+        {
+            "collectionId": "e0dc3b37-ef89-d26b-aa54-107fa89d7316",
+            "id": "93373e03-7d2f-8919-0460-6e9a9f921328",
+            "name": "setRestricted",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/People/setRestricted.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e57063-4fb0-4fdf-8b2f-10530130a31c\n",
+            "data": [
+                {
+                    "key": "ids",
+                    "value": "1,2,3,4,5,6",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407547701399
+        },
+        {
+            "collectionId": "e0dc3b37-ef89-d26b-aa54-107fa89d7316",
+            "id": "b2cc53df-d259-7a1b-fbe1-f94cd006c1c8",
+            "name": "togglefollow",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/People/toggleFollow.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e57063-4fb0-4fdf-8b2f-10530130a31c\n",
+            "data": [
+                {
+                    "key": "data[Follower][id]",
+                    "value": "1",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Followee][id]",
+                    "value": "2",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407547710791
+        },
+        {
+            "collectionId": "e0dc3b37-ef89-d26b-aa54-107fa89d7316",
+            "id": "ed32e780-79a2-44ee-4218-c65066bd8fe8",
+            "name": "getPeople",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/People/getpeople.json?page=1",
+            "method": "GET",
+            "headers": "X-AuthTokenHeader: 53e57063-4fb0-4fdf-8b2f-10530130a31c\n",
+            "data": [
+                {
+                    "key": "data[Announcement][subject]",
+                    "value": "ok this is a postman announcement",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Announcement][body]",
+                    "value": "and its body",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Announcement][file_path]",
+                    "value": "",
+                    "type": "file"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407547652384
+        }
+    ]
+}

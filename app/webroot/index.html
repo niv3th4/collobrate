@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html ng-app="pyoopil">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>CollabRate</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="style.css" rel="stylesheet">
+    <link href="js/vendors/toastr/toastr.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/vendors/select2/select2.css" />
+    <link rel="stylesheet" href="js/vendors/ngQuickDate/dist/ng-quick-date-plus-default-theme.css" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie9.css" />
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller="mainCtrl">
+    <div ui-view="header">
+        <header class="landing-page">
+            <section class="clearfix header">
+                <!-- Logo-->
+                <div class="logo">
+                    <a ui-sref="#/index">
+                        <img src="images/logo.png" class="f-left" alt="logo">
+                    </a>
+                </div>
+            </section>
+        </header>
+    </div>
+    <div ui-view>
+
+    </div>
+    <div class="overlays" ng-if="template.url">
+        <div ng-include src="template.url" class="overlay"></div>
+    </div>
+    <overlay></overlay>
+    <!-- DEPS -->
+    <script src="js/vendors/jquery-1.8.2.min.js"></script>
+    <script src="js/vendors/lodash/dist/lodash.min.js"></script>
+    <script src="js/vendors/TinyScrollbar/lib/jquery.tinyscrollbar.js"></script>
+    <!-- JQUERY PLUGINS -->
+    <script src="js/vendors/toastr.js"></script>
+    <script src="js/vendors/ckeditor/ckeditor.js"></script>
+    <script src="js/vendors/pass-meter/dist/pass-meter.min.js"></script>
+    <script src="js/vendors/select2/select2.min.js"></script>
+    <!-- ANGULAR DEPS-->
+    <script src="js/vendors/angular/angular.min.js"></script>
+    <script src="js/vendors/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="js/vendors/angular-re-captcha/angular-re-captcha.js"></script>
+    <script src="js/vendors/angular-cookies/angular-cookies.min.js"></script>
+    <script src="js/vendors/angular-sanitize/angular-sanitize.js"></script>
+    <script src="js/vendors/angular-file-upload/angular-file-upload.js"></script>
+    <script src="js/vendors/ng-ckeditor/ng-ckeditor.js"></script>
+    <script src="js/vendors/angular-ui-select2/src/select2.js"></script>
+    <script src="js/vendors/ngQuickDate/dist/ng-quick-date.js"></script>
+    <script src="js/vendors/angular-google-chart/ng-google-chart.js"></script>
+    <!-- APPLICATION -->
+    <script src="js/app/app.js"></script>
+
+    <!-- BASE -->
+    <script src="js/app/Constants/constants.js"></script>
+    <script src="js/app/Services/EventEmitter.js"></script>
+    <script src="js/app/Services/utilities.js"></script>
+    <script src="js/app/Services/authentication.js"></script>
+    <script src="js/app/Controllers/@BaseCtrl.js"></script>
+
+    <!-- GLOBAL -->
+    <script src="js/app/Services/components/notify.js"></script>
+    <script src="js/app/Services/form.js"></script>
+    <script src="js/app/Services/UserService.js"></script>
+    <script src="js/app/Controllers/mainCtrl.js"></script>
+    <script src="js/app/Controllers/loginCtrl.js"></script>
+    <script src="js/app/Controllers/logoutCtrl.js"></script>
+    <script src="js/app/Directives/Global/overlay.js"></script>
+    <script src="js/app/Directives/Global/Sandbox/scrollbar.js"></script>
+    <script src="js/app/Directives/Global/Sandbox/tiles.js"></script>
+    <script src="js/app/Directives/Global/Sandbox/replies.js"></script>
+    <script src="js/app/Directives/Global/Sandbox/reply.js"></script>
+    <script src="js/app/Directives/Global/Sandbox/gamification.js"></script>
+
+    <!-- LOGIN -->
+    <script src="js/app/Directives/Global/register.js"></script>
+    <script src="js/app/Directives/Global/login.js"></script>
+    <script src="js/app/Directives/Global/resetpass.js"></script>
+
+    <!-- Classroom -->
+    <script src="js/app/Services/Classrooms/@Base.js"></script>
+    <script src="js/app/Services/Classrooms/classrooms.js"></script>
+    <script src="js/app/Services/Classrooms/announcements.js"></script>
+    <script src="js/app/Services/Classrooms/discussions.js"></script>
+    <script src="js/app/Services/Classrooms/people.js"></script>
+    <script src="js/app/Services/Classrooms/library.js"></script>
+    <script src="js/app/Controllers/Classrooms/classroomsCtrl.js"></script>
+    <script src="js/app/Controllers/Classrooms/announcementsCtrl.js"></script>
+    <script src="js/app/Controllers/Classrooms/discussions.js"></script>
+    <script src="js/app/Controllers/Classrooms/people.js"></script>
+    <script src="js/app/Controllers/Classrooms/library.js"></script>
+    <script src="js/app/Directives/Classrooms/classrooms.js"></script>
+    <script src="js/app/Directives/Classrooms/classroom.js"></script>
+    <script src="js/app/Directives/Classrooms/classroom-header.js"></script>
+    <script src="js/app/Directives/Classrooms/create-classroom.js"></script>
+    <script src="js/app/Directives/Classrooms/announcements.js"></script>
+    <script src="js/app/Directives/Classrooms/announcement.js"></script>
+    <script src="js/app/Directives/Classrooms/discussionTypes.js"></script>
+    <script src="js/app/Directives/Classrooms/discussionType.js"></script>
+    <script src="js/app/Directives/Classrooms/discussions.js"></script>
+    <script src="js/app/Directives/Classrooms/discussion.js"></script>
+    <script src="js/app/Directives/Classrooms/peoples.js"></script>
+    <script src="js/app/Directives/Classrooms/people.js"></script>
+
+
+    <script>
+        // Prevent console.log from generating errors in IE for the purposes of the demo
+        if (!window.console) console = {
+            log: function () {}
+        };
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "positionClass": "toast-top-full-width",
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    </script>
+</body>
+
+</html>

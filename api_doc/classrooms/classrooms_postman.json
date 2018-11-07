@@ -1,0 +1,191 @@
+{
+    "id": "4df5b680-bc3c-299e-cb5a-0eb4b6e762a0",
+    "name": "Classroom",
+    "timestamp": 1403184976203,
+    "requests": [
+        {
+            "collectionId": "4df5b680-bc3c-299e-cb5a-0eb4b6e762a0",
+            "id": "26595ef2-2263-96fc-2312-71eb60d20d55",
+            "name": "get Departments",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/getDepartmentsList.json",
+            "method": "GET",
+            "headers": "X-AuthTokenHeader: 53e4f8a9-9d78-417c-ae57-0b930130a31c\n",
+            "data": [
+                {
+                    "key": "data[Classroom][access_code]",
+                    "value": "cDxxet",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407515364690
+        },
+        {
+            "collectionId": "4df5b680-bc3c-299e-cb5a-0eb4b6e762a0",
+            "id": "3c677aa3-bd9a-af8b-4588-417ab89d90be",
+            "name": "create classroom",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/add.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e4f8a9-9d78-417c-ae57-0b930130a31c\n",
+            "data": [
+                {
+                    "key": "data[Classroom][title]",
+                    "value": "yessir",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][campus_id]",
+                    "value": "1",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][department_id]",
+                    "value": "1",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][duration_start_date]",
+                    "value": "06/21/2014",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][duration_end_date]",
+                    "value": "06/21/2014",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][semester]",
+                    "value": "",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][is_private]",
+                    "value": "1",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][description]",
+                    "value": "ASdasdasdas",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][degree_id]",
+                    "value": "1",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][link]",
+                    "value": "",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Classroom][minimum_attendance_percentage]",
+                    "value": "",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407515428925
+        },
+        {
+            "collectionId": "4df5b680-bc3c-299e-cb5a-0eb4b6e762a0",
+            "id": "5603827e-7bb9-547b-421a-5968cad64e03",
+            "name": "resetcode",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/resetcode.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e34e6d-332c-4fdc-ad1e-21270130a31c\n",
+            "data": [],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407405837992
+        },
+        {
+            "collectionId": "4df5b680-bc3c-299e-cb5a-0eb4b6e762a0",
+            "id": "6fb3050c-5cb1-3779-adb1-f68851f54592",
+            "name": "get Campuses",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/getCampusesList.json",
+            "method": "GET",
+            "headers": "X-AuthTokenHeader: 53e4f8a9-9d78-417c-ae57-0b930130a31c\n",
+            "data": [
+                {
+                    "key": "data[Classroom][access_code]",
+                    "value": "cDxxet",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407515358778
+        },
+        {
+            "collectionId": "4df5b680-bc3c-299e-cb5a-0eb4b6e762a0",
+            "id": "bd77f372-1105-19c6-b2c5-66d4f42cd557",
+            "name": "getclassrooms",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/getclassrooms.json?page=1",
+            "method": "GET",
+            "headers": "X-AuthTokenHeader: 53e4f8a9-9d78-417c-ae57-0b930130a31c\n",
+            "data": [
+                {
+                    "key": "data[Classroom][access_code]",
+                    "value": "cDxxet",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407515343275
+        },
+        {
+            "collectionId": "4df5b680-bc3c-299e-cb5a-0eb4b6e762a0",
+            "id": "cbcd4b43-5236-3572-f51e-4144db1cdbce",
+            "name": "get Degrees",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/getDegreesList.json",
+            "method": "GET",
+            "headers": "X-AuthTokenHeader: 53e4f8a9-9d78-417c-ae57-0b930130a31c\n",
+            "data": [
+                {
+                    "key": "data[Classroom][access_code]",
+                    "value": "cDxxet",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407515370147
+        },
+        {
+            "collectionId": "4df5b680-bc3c-299e-cb5a-0eb4b6e762a0",
+            "id": "f19fc1be-5e5c-7ae1-1090-58d3319117b5",
+            "name": "join with code",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/join.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e4fb74-4b38-47a7-998f-0b940130a31c\n",
+            "data": [
+                {
+                    "key": "data[Classroom][access_code]",
+                    "value": "vq77A8",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407515597322
+        }
+    ]
+}

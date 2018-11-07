@@ -1,0 +1,86 @@
+<div id="create-assign" class="create-popup doc-popup" ng-controller="classroomsCtrl">
+    <div class="pop-wind clearfix">
+        <div class="pop-head clearfix">
+            <span>Create Classroom</span>
+            <a class="close-link" href="#">
+                <span class="icon-cross"></span>
+            </a>
+        </div>
+        <div class="pop-content clearfix">
+            <form class="form-data create-popup" name="createClassroomForm" id="createClassroomForm"
+                  ng-submit="createClassroom()" novalidate>
+                <div class="left-pop">
+                    <label for="title">Name of the classrom</label>
+                    <input type="text" id="title" name="title" autofocus placeholder="Enter class name.." class="pop-input" required ng-model="classroom.title"
+                            ng-class="{error: createClassroomForm.title.$error.required && isSubmitted }"/>
+                    <label>University Association</label>
+                    <select class="chosen-select select_option" ng-model="classroom.campus_id" ng-init="classroom.campus_id = 1">
+                        <option value="1">University Association 1</option>
+                        <option value="2">University Association 2</option>
+                        <option value="3">University Association 3</option>
+                        <option value="4">University Association 4</option>
+                    </select>
+                    <label>Department</label>
+                    <select class="chosen-select select_option" ng-model="classroom.department_id" ng-init="classroom.department_id = 1">
+                        <option value="1">Department 1</option>
+                        <option value="2">Department 2</option>
+                        <option value="3">Department 3</option>
+                        <option value="4">Department 4</option>
+                    </select>
+                    <label>Year</label>
+
+                    <div class="year-dd">
+                        <select class="chosen-select">
+                            <option value="1">2010</option>
+                            <option value="2">2011</option>
+                            <option value="3">2012</option>
+                            <option value="4">2013</option>
+                        </select>
+                    </div>
+                    <div class="check-btn">
+                        <input id="others" type="checkbox" name="others" value="others">
+                        <label for="others" class="radio-lbl">Others</label>
+                    </div>
+                    <label>Duration of the course</label>
+
+                    <div class="calender create-date">
+                        <quick-datepicker required init-value="8/5/2014" ng-model='classroom.duration_start_date' disable-timepicker='true' placeholder="Start Date" style="width: 100%"></quick-datepicker>
+                    </div>
+                    <div class="calender create-date">
+                        <quick-datepicker required init-value="8/5/2016" ng-model='classroom.duration_end_date' disable-timepicker='true' placeholder="End Date" style="width: 100%"></quick-datepicker>
+                    </div>
+                    <label>Semester</label>
+                    <select class="chosen-select select_option" ng-model="classroom.semester" ng-init="classroom.semester = 1">
+                        <option value="1">Semester 1</option>
+                        <option value="2">Semester 2</option>
+                        <option value="3">Semester 3</option>
+                        <option value="4">Semester 4</option>
+                    </select>
+                </div>
+                <div class="right-pop">
+                    <label>Course Type</label>
+
+                    <div class="radio-btn" ng-init="classroom.is_private = 0">
+                        <input id="Public" name="type" type="radio"  value="0" ng-model="classroom.is_private">
+                        <label for="Public" class="radio-lbl">Public</label>
+                        <input id="Private" name="type" type="radio" value="1" ng-model="classroom.is_private">
+                        <label for="Private" class="radio-lbl">Private</label>
+                    </div>
+                    <label>Course Description</label>
+                    <textarea class="pop-txtarea" ng-model="classroom.description" ng-init="classroom.description = 'Description'"></textarea>
+                    <label>Degree</label>
+                    <input type="text" class="pop-input"/>
+                    <label>You tube video link</label>
+                    <input type="text" class="pop-input" ng-model="classroom.link" />
+                    <label>Minimum required attendance</label>
+                    <input type="text" class="pop-dura" pattern="[0-9]{0,3}" title="Should be numbers.Max 3 numbers" ng-model="classroom.minimum_attendance"/>
+                    %
+                </div>
+                <div class="clear"></div>
+                <div class="submit-btn">
+                    <button type="submit" class="sub-btn" value="Create" id="quiz-link" ">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

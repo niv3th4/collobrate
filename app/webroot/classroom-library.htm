@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Pyoopil</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet">
+<link href="css/prettyPhoto.css" rel="stylesheet">
+<link href="css/jquery.tagit.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+     <script src="js/html5shiv.js"></script>
+<![endif]-->
+
+</head>
+<body class="bg-color">
+<!-- Header -->
+<header>
+  <section class="clearfix header">
+    <!-- Logo-->
+    <div class="logo"><a href="javascript:void(0)"><img src="images/logo.png" class="f-left" alt="logo"></a>
+      <span class="dd-block page-title"><a href="javascript:void(0)" class="dd-click">English 101<span class="title-arr"></span></a>
+      <div class="arr-dd">
+        <ul>
+          <li><a href="javascript:void(0)" id="view-dlink">View Info</a>
+            <!--View info Dialog-->
+            <div id="view-dialog" class="create-popup">
+              <div class="pop-wind clearfix">
+                <div class="pop-head clearfix">
+                  <span>Class Info</span>
+                  <a class="close-link" href="#">
+                  <span class="icon-cross"></span></a>
+                </div>
+                <div class="pop-content clearfix">
+                  <div class="iframe-container">
+                    <iframe frameborder="0" scrolling="no" src="popup-viewinfo-form.htm"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="javascript:void(0)" id="clone-dlink">Clone Classroom</a>
+            <!--View info Dialog-->
+            <div id="clone-dialog" class="create-popup">
+              <div class="pop-wind clearfix">
+                <div class="pop-head clearfix">
+                  <span>Class Info</span>
+                  <a class="close-link" href="#">
+                  <span class="icon-cross"></span></a>
+                </div>
+                <div class="pop-content clearfix">
+                  <div class="iframe-container">
+                    <iframe frameborder="0" scrolling="no" src="popup-clone-form.htm"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="javascript:void(0)">Archive Classroom</a>
+          </li>
+          <li class="lastli"><a href="javascript:void(0)">Reset Access Code</a>
+          </li>
+        </ul>
+      </div>
+      </span>
+    </div>
+    <div class="search">
+      <div class="uni-search clearfix">
+        <a href="javascript:void(0)" class="search-bx"></a>
+        <input type="text" placeholder="Search.." class="uni-searchinput">
+      </div>
+      <!-- Top Notification -->
+      <div class="right-slide">
+        <div class="toprightsection tabpages">
+          <ul>
+            <li><a href="#tab1" class="calenderdescrip tab">
+              <div class="top-icon cal"></div>
+              <span class="noti-num">5</span></a>
+            </li>
+            <li><a href="#tab2" class="msgdescrip tab">
+              <div class="top-icon chat"></div>
+              <span class="noti-num">5</span></a>
+            </li>
+            <li><a href="#tab3" class="tab">
+              <div class="top-icon noti"></div>
+              <span class="noti-num">11</span></a>
+            </li>
+            <li><a href="#tab4" class="tab">
+              <div class="top-icon msg"></div>
+              <span class="noti-num">4</span></a>
+            </li>
+            <li class="dock-bk lastli"><a href="#" class="active tab"><img src="images/arrow_back.png" class="mt5" alt=""></a>
+            </li>
+          </ul>
+          
+          <!-- Notification Right Window -->
+          <div class="notification_details">
+            <div id="tab1">
+              <p>Calender Panel</p>
+            </div>
+            <div id="tab2">
+              <p>Chat Panel</p>
+            </div>
+            <div id="tab3">
+              <p>Notification Panel</p>
+            </div>
+            <div id="tab4">
+              <p>Message Panel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<div class="container">
+  <!-- Left Navigation -->
+  <nav class="navigation-main">
+    <ul class="primary">
+      <li class="pdiscover">
+        <a href="#" class="lst-a myroom"><span class="icon"></span>
+        <span class="label">My Room</span></a>
+      </li>
+      <li class="pdiscover hassub active">
+        <a href="classroom.htm" class="lst-a classrooms"><span class="icon"></span>
+        <span class="label">Classrooms</span></a>
+        <div class="sub">
+          <!--Classroom sub nav-->
+          <ul class="menu-coll">
+            <li class="sub-menu pre-contact">
+              <a href="classroom.htm">
+              <p class="submenu-heading">All<br>
+                Classroom</p>
+              </a>
+              <!--Classroom Vertical Scroller-->
+              <div class="clearfix">
+                <div class="arrow_up"><img src="images/arrow-up.png" alt="Up"/></div>
+                <div class="scroll-pane">
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="arrow_down"><img src="images/arrow-down.png" alt="Down"/></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pdiscover hassub"><a href="institution.htm" class="lst-a institutionroom"><span class="icon"></span>
+        <span class="label">Institution Room</span></a>
+        <div class="sub">
+          <!--Institution sub nav-->
+          <ul class="menu-coll">
+            <li class="sub-menu pre-contact ">
+              <a href="institution.htm">
+              <p class="submenu-heading">Institution<br>
+                Room</p>
+              </a>
+              <div class="clearfix">
+                <div class="arrow_up"><img src="images/arrow-up.png" alt="Up"/></div>
+                <div class="scroll-pane">
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="arrow_down"><img src="images/arrow-down.png" alt="Down"/></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pdiscover hassub">
+        <a href="group.htm" class="lst-a groups"><span class="icon"></span>
+        <span class="label">Groups</span></a>
+        <div class="sub">
+          <!--Classroom sub nav-->
+          <ul class="menu-coll">
+            <li class="sub-menu pre-contact"><a href="group.htm">
+              <p class="submenu-heading">All<br>
+                Groups</p>
+              </a>
+              <div class="clearfix">
+                <div class="arrow_up"><img src="images/arrow-up.png" alt="Up"/></div>
+                <div class="scroll-pane">
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="arrow_down"><img src="images/arrow-down.png" alt="Down"/></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pdiscover">
+        <a href="pyoopilhub.htm" class="lst-a hub"><span class="icon hub-icon"></span>
+        <span class="label">pyoopil hub</span></a>
+      </li>
+      <li class="pdiscover">
+        <a href="my-account.htm" class="lst-a flname"><span class="icon"><img src="images/chat1.jpg" alt="fname" /></span>
+        <span class="label">first last name</span></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="logout"><img src="images/logout.png" alt=""></a>
+        <ul class="logout-lst">
+          <li class="lastli"><a href="logout.htm">Logout</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- Right side Content  -->
+  <section class="rightwrapper">
+    <!-- Right Sub Navigation -->
+    <section class="pagesubnav">
+      <div class="clearfix">
+        <ul class="left-subnav clearfix">
+          <li><a href="classroom-discussion.htm">Discussions</a>
+          </li>
+          <li><a href="classroom-announcment.htm">Announcements</a>
+          </li>
+          <li><a href="classroom-library.htm" class="active">Library</a>
+          </li>
+          <li><a href="classroom-people.htm">People</a>
+          </li>
+          <li><a href="classroom-submission.htm">Submissions</a>
+          </li>
+          <li><a href="classroom-reports.htm">Reports</a>
+          </li>
+          <li>
+            <div class="loader"><img src="images/loading/ajax-loader.gif" alt="loading"></div>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <a href="javascript:void(0)" class="sub-btn" id="dialog-link">Invite</a>
+          <a href="javascript:void(0)" class="nav-search"></a>
+          <div class="search-input">
+            <div class="search-panel">
+              <input type="text" placeholder="Search" >
+              <a href="classroom-searchresult.htm" class="search-btn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--invite popup-->
+      <div id="dialog" class="create-popup invite">
+        <div class="pop-wind clearfix">
+          <div class="pop-head clearfix">
+            <span>Invite</span>
+            <a class="close-link" href="#">
+            <span class="icon-cross"></span></a>
+          </div>
+          <div class="pop-content clearfix">
+            <div class="assign-pop">
+              <form class="form-data create-popup">
+                <div class="clearfix">
+                  <div class="invi-left">
+                    <div class="sel-univ">
+                      <p class="uni-topic">Select University</p>
+                      <select class="chosen-select select_option">
+                        <option>University Association 1</option>
+                        <option>University Association 2</option>
+                        <option>University Association 3</option>
+                        <option>University Association 4</option>
+                      </select>
+                    </div>
+                    <div  id="catalog">
+                      <div class="accordionsections">
+                        <div class="as1tab head-acc">Department 1</div>
+                        <div class="as1tabdec">
+                          <div class="as1tab sub1-acc">Degree 1 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 1 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 2 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 3 (100 people)</div>
+                          <div class="as1tab sub1-acc">Degree 2 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Tab2 Dec</div>
+                          <div class="as1tab sub1-acc">Degree 3 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Tab3 Dec</div>
+                        </div>
+                        <div class="as1tab head-acc">Department 2</div>
+                        <div class="as1tabdec">
+                          <div class="as1tab sub1-acc">Degree 1 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 1 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 2 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 3 (100 people)</div>
+                          <div class="as1tab sub1-acc">Degree 2 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 2</div>
+                          <div class="as1tab sub1-acc">Degree 3 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 2</div>
+                        </div>
+                        <div class="as1tab head-acc">Department 3</div>
+                        <div class="as1tabdec">
+                          <div class="as1tab sub1-acc">Degree 1 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 1 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 2 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 3 (100 people)</div>
+                          <div class="as1tab sub1-acc">Degree 2 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section 1</div>
+                          <div class="as1tab sub1-acc">Degree 3 (100 people)</div>
+                          <div class="as1tabdec sub2-acc">Section </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="invi-right msg-scroll">
+                      <input name="tags" id="mySingleField" disabled="true" value="Gaurav Sharma">
+                <!-- fetches all the value -->
+                <ul id="singleFieldTags" class="pop-input">
+                </ul>
+                      <div class="invi-space">
+                        <div id="cart">
+                          <div class="ui-widget-content">
+                            <ol>
+                              <li class="placeholder">Drag here</li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="submit-btn two-btn">
+                  <input type="submit" class="sub-btn cnl-btn" value="Cancel">
+                    <input type="submit" class="sub-btn" value="Send Invite">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Right Content -->
+    <section class="pagecontent clearfix">
+      <div class="library-wrapper library">
+        <div class="topbuttons">
+          <a href="javascript:void(0)" class="follow" id="upload-dlink">Upload</a>
+          <!--popup-->
+          <div id="upload-dialog" class="create-popup">
+            <div class="pop-wind clearfix">
+              <div class="pop-head clearfix">
+                <span>Upload</span>
+                <a class="close-link" href="#">
+                <span class="icon-cross"></span></a>
+              </div>
+              <div class="pop-content clearfix">
+                <form class="form-data">
+                  <div class="upload-form clearfix">
+                    <!-- form 1 -->
+                    <div id="form1">
+                      <p class="up-heading"> Step 1 of 2: Select a topic</p>
+                      <div class="select-topic">
+                       <!-- <a href="javascript:void(0)" class="sel-topic">Select Topic</a>
+                        <div class="seltop-dd">
+                          <a href="javascript:void(0)" class="new-topic">Create New Topic</a>
+                          <ul>
+                            <li><a href="javascript:void(0)">Topic 1</a>
+                            </li>
+                            <li><a href="javascript:void(0)">Topic 2</a>
+                            </li>
+                            <li><a href="javascript:void(0)">Topic 3</a>
+                            </li>
+                            <li><a href="javascript:void(0)">Topic 4</a>
+                            </li>
+                          </ul>
+                        </div> -->
+						<select class="chosen-select select_option" id="topic-dd">
+							<option class="new-topic">Create New Topic</option>
+							<option>Topic 2</option>
+							<option>Topic 3</option>
+							<option>Topic 4</option>
+						</select>
+                        <input type="text" class="pop-input" id="enter-topic" placeholder="Enter Topic Name" />
+                        <div class="nav-btn">
+                          <input type="button" class="follow active goto2" value="Next">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- form 2 -->
+                    <div id="form2">
+                      <p class="up-heading">Step 2 of 2</p>
+                      <div class="select-topic">
+                        <p class="sub-sel">Topic Name:<span> Topic 1</span></p>
+                        <div class="tabpages">
+                          <ul class="upload-tab">
+                            <li><a href="#file1" class="tab active">Upload file</a>
+                            </li>
+                            <li><a href="#link1" class="tab">Upload link</a>
+                            </li>
+                          </ul>
+                          <div id="file1" class="tab-contt">
+                            <p>Select file to upload</p>
+                            <div class="upload-files">
+                              <div class="add-upload clearfix">
+                                <div class="custom-upload" id="test0">
+                                  <input type="file" name="files[]">
+                                  <div class="file-upload">
+                                    <span class="file-txt">Select file</span>
+                                    <input disabled="disabled" value="No File Chosen">
+                                  </div>
+                                  <div class="size-txt">(Max. 00 mb)</div>
+                                </div>
+                              </div>
+                              <span class="add-more tooltip" title="Add File"></span>
+                            </div>
+                            <div class="error-txt">
+                              <p>! File exceeded max. limit. </p>
+                              <p>Select another file or reduce size and upload again</p>
+                            </div>
+                          </div>
+                          <div id="link1" class="tab-contt">
+                            <p>Paste link here</p>
+                            <div class="upload-links">
+                              <div class="add-links">
+                                <input type="text" class="pop-input" placeholder="Upload links">
+                              </div>
+                            </div>
+                            <span class="add-link tooltip" title="Add Link"></span>
+                          </div>
+                        </div>
+                        <div class="nav-btn">
+                          <input type="button" class="follow backto1" value="Oops !">
+                          <input type="button" class="follow active" value="Save">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clear"></div>
+        <div class="attach-doc classlibrary stud-pnl">
+          <div class="doc-heading clearfix">
+            <input type="text" class="doc-input" value="Topic 1"  maxlength="70" readonly>
+            <div class="lib-right">
+              <a href="javascript:void(0)" class="lib-edit tooltip" title="Edit Topic"></a>
+              <a href="javascript:void(0)" class="lib-delete tooltip" title="Delete"></a>
+              <a href="javascript:void(0)" class="lib-download tooltip" title="Download"></a>
+              <div class="click-lib click-icon tooltip" title="Click to slide"></div>
+            </div>
+          </div>
+          <div class="contentblock">
+            <p class="classlibraryhd">Documents </p>
+            <ul class="doc-list">
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                 <a href="http://docs.google.com/viewer?url=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F53511011b047829e0d3fcccc%2F53511127392e0ca05e6b1d73%2F1d1e2f919ffa598c15336e8ac3ac2c1f%2FPYOOPIL_HTML_Schedule.xlsx&embedded=true?iframe=true&width=100%&height=100%" rel="prettyPhoto[iframes]">
+                 <div class="doc-top">
+                 
+                  <p>Document</p>
+                  <p>Subject</p>
+                 
+                </div> </a>
+                <div class="doc-end clearfix">
+                  <a href="javascript:void(0)" title="dialogbox1" class="dialogbox"><img src="images/word_icon.png" class="m3-0"></a>
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <a href="javascript:void(0)" title="dialogbox1" class="dialogbox"><div class="doc-top">
+                  
+                  <p>Document</p>
+                  <p>Subject</p>
+                  
+                </div></a>
+                <div class="doc-end clearfix">
+                  <a href="javascript:void(0)" title="dialogbox2" class="dialogbox"><img src="images/doc-icon.png" class="m3-0"></a>
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+                
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <a href="javascript:void(0)" title="dialogbox3" class="dialogbox"><div class="doc-top">
+                  
+                  <p>Document</p>
+                  <p>Subject</p>
+                  
+                </div></a>
+                <div class="doc-end clearfix">
+                  <a href="javascript:void(0)" title="dialogbox1" class="dialogbox"><img src="images/doc-icon.png" class="m3-0"></a>
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+                
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <a href="javascript:void(0)" title="dialogbox1" class="dialogbox"><div class="doc-top">
+                  
+                  <p>Document</p>
+                  <p>Subject</p>
+                  
+                </div></a>
+                <div class="doc-end clearfix">
+                  <a href="javascript:void(0)" title="dialogbox1" class="dialogbox"><img src="images/doc-icon.png" class="m3-0"></a>
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+              </li>
+            </ul>
+            <p class="classlibraryhd">Pictures</p>
+            <ul class="doc-list imglist">
+              <li>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)" class="del-lib"></a>
+                  <a href="images/classroom/big.png" rel="prettyPhoto[pp_gal]">
+                  <img src="images/classroom/big.png">
+                  <div class="piccaption clearfix">Posted <br>
+                    08.02.13</div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)" class="del-lib"></a>
+                  <a href="images/classroom/library-img2.jpg" rel="prettyPhoto[pp_gal]">
+                  <img src="images/classroom/library-img2.jpg">
+                  <div class="piccaption clearfix">Posted <br>
+                    08.02.13</div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)" class="del-lib"></a>
+                  <a href="images/classroom/library-img3.jpg" rel="prettyPhoto[pp_gal]">
+                  <img src="images/classroom/library-img3.jpg">
+                  <div class="piccaption clearfix">Posted <br>
+                    08.02.13</div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <a href="images/classroom/library-img4.jpg" rel="prettyPhoto[pp_gal]">
+                <img src="images/classroom/library-img4.jpg">
+                <div class="piccaption clearfix">Posted <br>
+                  08.02.13</div>
+                </a>
+              </li>
+              <li>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)" class="del-lib"></a>
+                  <a href="images/classroom/library-img5.jpg" rel="prettyPhoto[pp_gal]">
+                  <img src="images/classroom/library-img5.jpg">
+                  <div class="piccaption clearfix">Posted <br>
+                    08.02.13</div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <p class="classlibraryhd">Presentations</p>
+            <ul class="doc-list">
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <div class="doc-top">
+                  <p>Document</p>
+                  <p>Subject</p>
+                </div>
+                <div class="doc-end clearfix">
+                  <img src="images/ppt_icon.png" class="m3-0">
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <div class="doc-top">
+                  <p>Document</p>
+                  <p>Subject</p>
+                </div>
+                <div class="doc-end clearfix">
+                  <img src="images/ppt_icon.png" class="m3-0">
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <div class="doc-top">
+                  <p>Document</p>
+                  <p>Subject</p>
+                </div>
+                <div class="doc-end clearfix">
+                  <img src="images/ppt_icon.png" class="m3-0">
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <div class="doc-top">
+                  <p>Document</p>
+                  <p>Subject</p>
+                </div>
+                <div class="doc-end clearfix">
+                  <img src="images/ppt_icon.png" class="m3-0">
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+              </li>
+            </ul>
+            <p class="classlibraryhd">Links</p>
+            <ul class="doc-list link-lst">
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <div class="doc-top">
+                  <p>Go To Link</p>
+                </div>
+                <div class="doc-end clearfix">
+                  <img src="images/link-icon.png" class="m3-0">
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <div class="doc-top">
+                  <p>Go To Link</p>
+                </div>
+                <div class="doc-end clearfix">
+                  <img src="images/link-icon.png" class="m3-0">
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <div class="doc-top">
+                  <p>Go To Link</p>
+                </div>
+                <div class="doc-end clearfix">
+                  <img src="images/link-icon.png" class="m3-0">
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+              </li>
+            </ul>
+            <p class="classlibraryhd">Video</p>
+            <ul class="doc-list imglist">
+              <li>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)" class="del-lib"></a>
+                  <a href="http://www.youtube.com/watch?v=hKC-sWjgdPA" rel="prettyPhoto[pp_gal]">
+                  <img src="images/classroom/library-video1.jpg">
+                  <div class="piccaption clearfix">Posted <br>
+                    08.02.13</div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)" class="del-lib"></a>
+                  <a href="http://www.youtube.com/watch?v=hKC-sWjgdPA" rel="prettyPhoto[pp_gal]">
+                  <img src="images/classroom/library-video2.jpg">
+                  <div class="piccaption clearfix">Posted <br>
+                    08.02.13</div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)" class="del-lib"></a>
+                  <a href="http://www.youtube.com/watch?v=hKC-sWjgdPA" rel="prettyPhoto[pp_gal]">
+                  <img src="images/classroom/library-video3.jpg">
+                  <div class="piccaption clearfix">Posted <br>
+                    08.02.13</div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)" class="del-lib"></a>
+                  <a href="http://www.youtube.com/watch?v=hKC-sWjgdPA" rel="prettyPhoto[pp_gal]">
+                  <img src="images/classroom/library-video4.jpg">
+                  <div class="piccaption clearfix">Posted <br>
+                    08.02.13</div>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="img-wrapper">
+                  <a href="javascript:void(0)" class="del-lib"></a>
+                  <a href="http://www.youtube.com/watch?v=hKC-sWjgdPA" rel="prettyPhoto[pp_gal]">
+                  <img src="images/classroom/library-video5.jpg">
+                  <div class="piccaption clearfix">Posted <br>
+                    08.02.13</div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="attach-doc classlibrary stud-pnl">
+          <div class="doc-heading clearfix">
+            <input type="text" class="doc-input" value="Topic 2"  maxlength="70" readonly>
+            <div class="lib-right">
+              <a href="javascript:void(0)" class="lib-edit tooltip" title="Edit Topic"></a>
+              <a href="javascript:void(0)" class="lib-delete tooltip" title="Delete"></a>
+              <a href="javascript:void(0)" class="lib-download tooltip" title="Download"></a>
+              <div class="click-lib click-icon tooltip" title="Click to slide"></div>
+            </div>
+          </div>
+          <div class="contentblock">
+            <p class="classlibraryhd">Documents </p>
+            <ul class="doc-list">
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                 <a href="javascript:void(0)" title="dialogbox1" class="dialogbox"><div class="doc-top">
+                 
+                  <p>Document</p>
+                  <p>Subject</p>
+                 
+                </div> </a>
+                <div class="doc-end clearfix">
+                  <a href="javascript:void(0)" title="dialogbox1" class="dialogbox"><img src="images/word_icon.png" class="m3-0"></a>
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+             </li>
+              <li>
+                <a href="javascript:void(0)" class="del-lib"></a>
+                <a href="javascript:void(0)" title="dialogbox1" class="dialogbox"><div class="doc-top">
+                  
+                  <p>Document</p>
+                  <p>Subject</p>
+                  
+                </div></a>
+                <div class="doc-end clearfix">
+                  <a href="javascript:void(0)" title="dialogbox1" class="dialogbox"><img src="images/doc-icon.png" class="m3-0"></a>
+                  <p class="f-right">Posted<br>
+                    12.08.13</p>
+                </div>
+                
+                <!--popup-->
+                <div id="dialogbox1" class="create-popup doc-popup">
+                  <div class="pop-wind clearfix">
+                    <div class="pop-head clearfix">
+                      <span>Document</span>
+                      <a href="#" class="close-link"><span class="icon-cross">
+                      </span></a>
+                    </div>
+                    <div class="pop-content clearfix">
+                      <iframe src="http://docs.google.com/viewer?url=https%3A%2F%2Ftrello-attachments.s3.amazonaws.com%2F53511011b047829e0d3fcccc%2F53511127392e0ca05e6b1d73%2F1d1e2f919ffa598c15336e8ac3ac2c1f%2FPYOOPIL_HTML_Schedule.xlsx&embedded=true" width="100%" height="780" style="border: none;"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.js"></script>
+<script src="js/jquery.gdocsviewer.min.js"></script>
+<script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+<script>
+//Pretty Photo Gallery in contact images & videos
+	$("a[rel^='prettyPhoto']").prettyPhoto();
+</script>
+<script type='text/javascript' src='js/tag-it.min.js'></script>
+<script>
+//tagit
+$(function(){
+	//close
+	
+	var sampleTags = ['Ahmed','Ram','Mohan','Swati','Nikhil','Manish','Gaurav','Aaliyah','Apeksha','Deepti','Parul'];
+	$('#singleFieldTags,#singleFieldTags2').tagit({
+		availableTags: sampleTags,
+		// This will make Tag-it submit a single form value, as a comma-delimited field.
+		singleField: true,
+		singleFieldNode: $('#mySingleField,#mySingleField2')
+	});
+});	
+
+</script>
+<script src="js/plugin.js"></script>
+<script src="js/core.js"></script>
+</body>
+</html>

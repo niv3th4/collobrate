@@ -1,0 +1,39 @@
+<div class="arrbox-footer gamification clearfix">
+    <div class="f-left prs-sp">
+        <a href="javascript:void(0)" class="icon-title praise-me">
+            <span class="praise-icon" ng-class="{nopraise: !canPraise, addPraise: canPraise}">0</span>Praise
+        </a>
+        <div class="clk-tt" ng-if="showPraise">
+            <ul class="praise">
+                <li>
+                    <a href="javascript:void(0)" ng-click="handlePraise('en')"><span>EN</span>Engagement</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" ng-click="handlePraise('in')" data-praise-type="in"><span>IN</span>Intelligence</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" ng-click="handlePraise('cu')" data-praise-type="cu"><span>CU</span>Curiosity</a></li>
+                <li>
+                    <a href="javascript:void(0)" ng-click="handlePraise('co')" data-praise-type="co"><span>CO</span>Contribution</a>
+                </li>
+                <li class="lastli">
+                    <a href="javascript:void(0)" ng-click="handlePraise('ed')" data-praise-type="ed"><span>ED</span>
+                    Endorsement
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="f-right" ng-if="showPraiseResults">
+        <div class="enga"><a href="javascript:void(0)" class="msg-link point-icon">en</a> <span
+                class="icon-title">{{Gamificationvote.en.length}}</span></div>
+        <div class="enga"><a href="javascript:void(0)" class="msg-link point-icon">in</a> <span
+                class="icon-title">{{Gamificationvote.in.length}}</span></div>
+        <div class="enga"><a href="javascript:void(0)" class="msg-link point-icon">cu</a> <span
+                class="icon-title">{{Gamificationvote.cu.length}}</span></div>
+        <div class="enga"><a href="javascript:void(0)" class="msg-link point-icon">co</a> <span
+                class="icon-title">{{Gamificationvote.co.length}}</span></div>
+        <div class="enga"><a href="javascript:void(0)" class="msg-link point-icon">ed</a> <span
+                class="icon-title">{{Gamificationvote.ed.length}}</span></div>
+    </div>
+</div>

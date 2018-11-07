@@ -1,0 +1,67 @@
+{
+    "id": "b0a05067-3946-33f1-9549-de2451439d53",
+    "name": "Announcements",
+    "timestamp": 1403947099312,
+    "requests": [
+        {
+            "collectionId": "b0a05067-3946-33f1-9549-de2451439d53",
+            "id": "b81b6b18-6f6d-9129-7e9a-d6d30e3f1ac5",
+            "name": "add.json",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/Announcements/add.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e57063-4fb0-4fdf-8b2f-10530130a31c\n",
+            "data": [
+                {
+                    "key": "data[Announcement][subject]",
+                    "value": "ok this is a postman announcement",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Announcement][body]",
+                    "value": "and its body",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Announcement][file_path]",
+                    "value": "",
+                    "type": "file"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407545474433
+        },
+        {
+            "collectionId": "b0a05067-3946-33f1-9549-de2451439d53",
+            "id": "cb9e0054-a49a-1471-43b6-27a9f8ea41b8",
+            "name": "getannouncements.json?page=1",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/Announcements/getannouncements.json?page=1",
+            "method": "GET",
+            "headers": "X-AuthTokenHeader: 53e57063-4fb0-4fdf-8b2f-10530130a31c\n",
+            "data": [
+                {
+                    "key": "data[Announcement][subject]",
+                    "value": "ok this is a postman announcement",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Announcement][body]",
+                    "value": "and its body",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Announcement][file_path]",
+                    "value": "",
+                    "type": "file"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407545525864
+        }
+    ]
+}

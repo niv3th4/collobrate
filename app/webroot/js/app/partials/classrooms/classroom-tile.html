@@ -1,0 +1,12 @@
+<li ng-repeat="classroom in classrooms" classroom="classroom" class="classroom">
+    <a ui-sref="Views.Announcements">
+        <div class="class-head" ng-if="classroom.UsersClassroom.is_teaching">My Class</div>
+        <div class="doc-top">
+            <p class="subject">{{ classroom.Classroom.title }}</p>
+            <div>by</div>
+            <div><span class="offline"></span> {{ classroom.Classroom.Educator }}</div>
+            <div class="totalstudent">( {{ classroom.Classroom.users_classroom_count }} Students)</div>
+        </div>
+        <p class="doc-end"> {{ classroom.Classroom.Campus.name }}</p>
+    </a>
+</li>

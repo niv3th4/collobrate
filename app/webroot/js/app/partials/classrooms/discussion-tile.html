@@ -1,0 +1,48 @@
+<div class="disc-box clearfix">
+    <div class="disc-left">
+        <a href="javascript:void(0)"><img src="images/follow1.jpg" class="disc-img"></a>
+    </div>
+    <div class="arrow_box">
+        <span class="arrowbox-icon {{discussion.Discussion.type}}-icon"></span>
+
+        <div class="name-left">
+            <p class="tname">{{discussion.Discussion.topic}}</p>
+
+            <p class="tby"><a href="javascript:void(0)">by {{discussion.AppUser.fname}} {{discussion.AppUser.lname
+                }}</a></p>
+
+            <p class="tby">{{discussion.Discussion.created}}</p>
+        </div>
+        <div class="icon-right">
+            <!--<a href="javascript:void(0)" class="vl-t tooltip"><img src="images/disc-share.png"></a>-->
+            <a href="javascript:void(0)" class="vl-t tooltip" ng-click="removeDiscussion()"><img
+                    src="images/disc-close.png"></a>
+            <a class="tooltip"
+               ng-class="{'fold-icon' : !discussion.Discussion.isFolded, 'folded-icon' : discussion.Discussion.isFolded }"
+               href="javascript:void(0)"
+               ng-click="foldDiscussion()"></a>
+        </div>
+        <div class="clear"></div>
+        <p class="ttxt" ng-bind-html="discussion.Discussion.body"></p>
+
+        <div class="clearfix polling" ng-if="discussion.Discussion.type === 'poll'">
+            <div class="poll-left" >
+                <a href="javascript:void(0)" class="ans-btn choice "
+                   ng-repeat="poll in discussion.Pollchoice"
+                   ng-click="votePoll(poll.id)"
+                   ng-class="{nopoll:canVote}" >{{poll.choice}}</a>
+            </div>
+            <div class="poll-right" ng-if="canVote">
+                <div google-chart chart="chartObject" style="height:150px; width:100%;"></div>
+            </div>
+        </div>
+        <gamification type="Discussion"></gamification>
+    </div>
+</div>
+<div class="bor-rep" ng-if="discussion.Reply.length > 0"><a href="javascript:void(0)" class="view-more">View more
+    answers <img src="images/view-all.png"></a>
+</div>
+<replies></replies>
+
+<input class="add-ans" type="text" placeholder="Add your answer..." name="reply_{{$index}}"
+       id="reply_{{$index}}" ng-keydown="addReply($event)" ng-model="comment">

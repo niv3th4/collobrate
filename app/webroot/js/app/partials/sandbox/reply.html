@@ -1,0 +1,34 @@
+<div class="disc-box clearfix">
+    <div class="disc-left">
+        <a href="javascript:void(0)">
+            <img src="/pyoopil/images/chat2.png" class="disc-img">
+        </a>
+    </div>
+    <div class="arrow_box">
+        <div class="name-left">
+            <p class="tname">
+                <a href="javascript:void(0)">{{ reply.AppUser.fname }} {{ reply.AppUser.lname }}</a>
+            </p>
+            <p class="tby">{{ reply.created }}</p>
+        </div>
+        <div class="icon-right">
+            <span class="dd-block">
+                <a href="javascript:void(0)" class="dd-icon dd-click"></a>
+                <div class="arr-dd" style="display: none;">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)" class="reportAbuse">Report Abuse</a>
+                        </li>
+                        <li class="lastli">
+                            <a href="javascript:void(0)" class="deleteComment">Delete Comment</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </span>
+        </div>
+        <div class="clear"></div>
+        <p class="ttxt">{{reply.comment}}</p>
+        <gamification type="Reply"></gamification>
+    </div>
+</div>

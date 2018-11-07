@@ -1,0 +1,17 @@
+{
+	"config": {
+		"vendor-dir": "Vendor"
+	},
+	"require": {
+		"mjohnson/uploader": "4.5.*",
+		"mjohnson/decoda": "6.*",
+		"aws/aws-sdk-php": "2.*",
+		"cakephp/debug_kit": "2.2.*",
+		"mjohnson/utility": "1.*",
+        "titon/utility": "*",
+        "cakedc/users": "*",
+        "dereuromark/cakephp-queue": "dev-master",
+        "dereuromark/tools-cakephp": "dev-master",
+        "friendsofcake/authenticate": "dev-master"
+	}
+}

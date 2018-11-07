@@ -1,0 +1,33 @@
+<section class="rightwrapper">
+    <classroom-header></classroom-header>
+    <section class="pagecontent clearfix">
+        <div class="library-wrapper" id="classrooms">
+            <div class="tinyscrollbar" scrollbar>
+                <ul class="tile-lst">
+                    <div class="scrollbar">
+                        <div class="track">
+                            <div class="thumb">
+                                <div class="end">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewport">
+                        <div class="overview">
+                            <li class="code-class" ng-click="showJoinClassroom()">
+                                <div class="newjoinbox">
+                                    <a class="newjoin">Join New Classroom</a>
+                                    <div class="accessclass">
+                                        <input type="text" class="access" name="search" ng-model="accessCode" placeholder="Enter Access Code" >
+                                        <a class="sub-btn" ng-click="joinClassroom()">Join Classroom</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <classrooms></classrooms>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>

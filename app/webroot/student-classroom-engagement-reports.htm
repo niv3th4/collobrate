@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Pyoopil</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet">
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+     <script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body class="bg-color">
+<!-- Header -->
+<header>
+  <section class="clearfix header">
+    <!-- Logo-->
+    <div class="logo"><a href="javascript:void(0)"><img src="images/logo.png" class="f-left" alt="logo"></a>
+      <span class="dd-block page-title"><a href="javascript:void(0)" class="dd-click">English 101</a>
+      <a href="javascript:void(0)" id="view-dlink" class="view-info">View Info</a>
+      <!--View info Dialog-->
+      <div id="view-dialog" class="create-popup">
+        <div class="pop-wind clearfix">
+          <div class="pop-head clearfix">
+            <span>Class Info</span>
+            <a class="close-link" href="#">
+            <span class="icon-cross"></span></a>
+          </div>
+          <div class="pop-content clearfix">
+            <div class="iframe-container">
+              <iframe frameborder="0" scrolling="no" src="popup-viewinfo-form.htm"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      </span>
+    </div>
+    <div class="search">
+      <div class="uni-search clearfix">
+      		<a href="javascript:void(0)" class="search-bx"></a>
+      		<input type="text" placeholder="Search.." class="uni-searchinput">
+      </div>
+      <!-- Top Notification -->
+      <div class="right-slide">
+        <div class="toprightsection tabpages">
+          <ul>
+            <li><a href="#tab1" class="calenderdescrip tab">
+              <div class="top-icon cal"></div>
+              <span class="noti-num">5</span></a>
+            </li>
+            <li><a href="#tab2" class="msgdescrip tab">
+              <div class="top-icon chat"></div>
+              <span class="noti-num">5</span></a>
+            </li>
+            <li><a href="#tab3" class="tab">
+              <div class="top-icon noti"></div>
+              <span class="noti-num">11</span></a>
+            </li>
+            <li><a href="#tab4" class="tab">
+              <div class="top-icon msg"></div>
+              <span class="noti-num">4</span></a>
+            </li>
+            <li class="dock-bk lastli"><a href="#" class="active tab"><img src="images/arrow_back.png" class="mt5" alt=""></a>
+            </li>
+          </ul>
+          
+          <!-- Notification Right Window -->
+          <div class="notification_details">
+            <div id="tab1">
+              <p>Calender Panel</p>
+            </div>
+            <div id="tab2">
+              <p>Chat Panel</p>
+            </div>
+            <div id="tab3">
+              <p>Notification Panel</p>
+            </div>
+            <div id="tab4">
+              <p>Message Panel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<div class="container">
+  <!-- Left Navigation -->
+  <nav class="navigation-main">
+    <ul class="primary">
+      <li class="pdiscover">
+        <a href="#" class="lst-a myroom"><span class="icon"></span>
+        <span class="label">My Room</span></a>
+      </li>
+      <li class="pdiscover hassub active">
+        <a href="classroom.htm" class="lst-a classrooms"><span class="icon"></span>
+        <span class="label">Classrooms</span></a>
+        <div class="sub">
+          <!--Classroom sub nav-->
+          <ul class="menu-coll">
+            <li class="sub-menu pre-contact">
+              <a href="classroom.htm">
+              <p class="submenu-heading">All<br>
+                Classroom</p>
+              </a>
+              <!--Classroom Vertical Scroller-->
+              <div class="clearfix">
+                <div class="arrow_up"><img src="images/arrow-up.png" alt="Up"/></div>
+                <div class="scroll-pane">
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="arrow_down"><img src="images/arrow-down.png" alt="Down"/></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pdiscover hassub"><a href="institution.htm" class="lst-a institutionroom"><span class="icon"></span>
+        <span class="label">Institution Room</span></a>
+        <div class="sub">
+          <!--Institution sub nav-->
+          <ul class="menu-coll">
+            <li class="sub-menu pre-contact ">
+              <a href="institution.htm">
+              <p class="submenu-heading">Institution<br>
+                Room</p>
+              </a>
+              <div class="clearfix">
+                <div class="arrow_up"><img src="images/arrow-up.png" alt="Up"/></div>
+                <div class="scroll-pane">
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="arrow_down"><img src="images/arrow-down.png" alt="Down"/></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pdiscover hassub">
+        <a href="group.htm" class="lst-a groups"><span class="icon"></span>
+        <span class="label">Groups</span></a>
+        <div class="sub">
+          <!--Classroom sub nav-->
+          <ul class="menu-coll">
+            <li class="sub-menu pre-contact"><a href="group.htm">
+              <p class="submenu-heading">All<br>
+                Groups</p>
+              </a>
+              <div class="clearfix">
+                <div class="arrow_up"><img src="images/arrow-up.png" alt="Up"/></div>
+                <div class="scroll-pane">
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="arrow_down"><img src="images/arrow-down.png" alt="Down"/></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pdiscover">
+        <a href="pyoopilhub.htm" class="lst-a hub"><span class="icon hub-icon"></span>
+        <span class="label">pyoopil hub</span></a>
+      </li>
+      <li class="pdiscover">
+        <a href="my-account.htm" class="lst-a flname"><span class="icon"><img src="images/chat1.jpg" alt="fname" /></span>
+        <span class="label">first last name</span></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="logout"><img src="images/logout.png" alt=""></a>
+         <ul class="logout-lst">
+          <li class="lastli"><a href="logout.htm">Logout</a>
+          </li>        </ul>
+        </li>
+        </ul>
+  </nav>
+  <!-- Right side Content  -->
+  <section class="rightwrapper">
+    <!-- Right Sub Navigation -->
+    <section class="pagesubnav">
+      <div class="clearfix">
+        <ul class="left-subnav clearfix">
+          <li><a href="student-classroom-discussion.htm">Discussions</a>
+          </li>
+          <li><a href="student-classroom-announcment.htm">Announcements</a>
+          </li>
+          <li><a href="student-classroom-library.htm">Library</a>
+          </li>
+          <li><a href="student-classroom-people.htm">People</a>
+          </li>
+          <li><a href="student-classroom-submission.htm">Submissions</a>
+          </li>
+          <li><a href="student-classroom-reports.htm" class="active">Reports</a>
+          </li>
+          <li><div class="loader"><img src="images/loading/ajax-loader.gif" alt="loading"></div></li>
+        </ul>
+        <div class="nav-right">
+          <a href="javascript:void(0)" class="nav-search"></a>
+         <div class="search-input">
+          		<div class="search-panel">
+                	<input type="text" placeholder="Search" >
+                    <a href="classroom-searchresult.htm" class="search-btn"></a>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Right Content -->
+    <section class="pagecontent clearfix">
+      <div class="content-wrapper inside-submit">
+        <div class="topbuttons">
+          <a href="student-classroom-reports.htm" class="follow">Back to Reports</a>
+          <h1 class="roomreport-topic">My Engagement Credits</h1>
+        </div>
+        <div class="credits-lst">
+        	<ul>
+            	<li>
+                	<div class="credit-icon">EN</div>
+                    <p class="credit-num">32</p>
+                    <p class="credit-txt">Engagement</p>
+                </li>
+                <li>
+                	<div class="credit-icon">IN</div>
+                    <p class="credit-num">17</p>
+                    <p class="credit-txt">Intelligence</p>
+                </li>
+                <li>
+                	<div class="credit-icon">CU</div>
+                    <p class="credit-num">27</p>
+                    <p class="credit-txt">Curiosity</p>
+                </li>
+                <li>
+                	<div class="credit-icon">CO</div>
+                    <p class="credit-num">07</p>
+                    <p class="credit-txt">Curiosity</p>
+                </li>
+                <li>
+                	<div class="credit-icon">ED</div>
+                    <p class="credit-num">20</p>
+                    <p class="credit-txt">Endorsement</p>
+                </li>
+            </ul>
+        </div>
+        <div class="view-head clearfix">
+          <p class="view-heading">Engagement Report</a>
+          </p>
+          <span class="f-right">Total students: 45</span>
+        </div>
+        <div class="engagement-content">
+          <ul class="engament-lst">
+            <li>
+              <div class="enga-title"><img src="images/classroom/gold-img.jpg" alt="img" />
+              </div>
+              <div class="assign-topic">
+                <div class="clearfix">
+                  <ul class="img-lst">
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Mansi Rawat</p></a>
+                    </li>
+                    <li class="active"><img src="images/classroom/follow-5.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/library-img1.jpg" alt="img" >
+                      <p class="lst-name">Dipika Arora</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="img" >
+                      <p class="lst-name">Manish Singh</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Charu Sen</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                  </ul>
+                  <a href="javascript:void(0)" class="enga-link"><span class="view-icon"></span>
+                  <p class="lst-name view-txt">View All</p>
+                  </a>
+                </div>
+                <div class="enga-hide">
+                  <ul class="img-lst">
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Mansi Rawat</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-5.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/library-img1.jpg" alt="img" >
+                      <p class="lst-name">Dipika Arora</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="img" >
+                      <p class="lst-name">Manish Singh</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Charu Sen</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="img" >
+                      <p class="lst-name">Manish Rawat</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="enga-title"><img src="images/classroom/silver.jpg" alt="img" />
+              </div>
+              <div class="assign-topic">
+                <div class="clearfix">
+                  <ul class="img-lst">
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Mansi Rawat</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-5.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/library-img1.jpg" alt="img" >
+                      <p class="lst-name">Dipika Arora</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="img" >
+                      <p class="lst-name">Manish Singh</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Charu Sen</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                  </ul>
+                  <a href="javascript:void(0)" class="enga-link"><span class="view-icon"></span>
+                  <p class="lst-name view-txt">View All</p>
+                  </a>
+                </div>
+                <div class="enga-hide">
+                  <ul class="img-lst">
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Mansi Rawat</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-5.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/library-img1.jpg" alt="img" >
+                      <p class="lst-name">Dipika Arora</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="img" >
+                      <p class="lst-name">Manish Singh</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Charu Sen</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="img" >
+                      <p class="lst-name">Manish Rawat</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="enga-title"><img src="images/classroom/bronze.jpg" alt="img" />
+              </div>
+              <div class="assign-topic">
+                <div class="clearfix">
+                  <ul class="img-lst">
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Mansi Rawat</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-5.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/library-img1.jpg" alt="img" >
+                      <p class="lst-name">Dipika Arora</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="img" >
+                      <p class="lst-name">Manish Singh</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Charu Sen</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                  </ul>
+                  <a href="javascript:void(0)" class="enga-link"><span class="view-icon"></span>
+                  <p class="lst-name view-txt">View All</p>
+                  </a>
+                </div>
+                <div class="enga-hide">
+                  <ul class="img-lst">
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Mansi Rawat</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-5.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/library-img1.jpg" alt="img" >
+                      <p class="lst-name">Dipika Arora</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="img" >
+                      <p class="lst-name">Manish Singh</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Mansi Gupta</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-4.jpg" alt="img" >
+                      <p class="lst-name">Charu Sen</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="img" >
+                      <p class="lst-name">Manish Rawat</p></a>
+                    </li>
+                    <li><a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="img" >
+                      <p class="lst-name">Ashish Garg</p></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.js"></script>
+<script src="js/plugin.js"></script>
+<script src="js/core.js"></script>
+</body>
+</html>

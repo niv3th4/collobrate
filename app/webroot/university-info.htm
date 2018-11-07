@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Pyoopil</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet">
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+<![endif]-->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<!-- Slider top -->
+<div class="topslider">
+<div id="sharediv">
+  <div id="tab1">
+    <div class="main_container">
+      <div class="social-share clearfix">
+        <p>Share Pyoopil on :</p>
+        <a href="javascript:void(0)" class="close-share"></a>
+        <ul>
+          <li><a href="#"><span class="message"></span></a>
+          </li>
+          <li><a href="#"><span class="fb"></span></a>
+          </li>
+          <li><a href="#"><span class="gplus"></span></a>
+          </li>
+          <li><a href="#"><span class="twit"></span></a>
+          </li>
+          <li><a href="#"><span class="pintrest"></span></a>
+          </li>
+          <li><a href="#"><span class="linkedin"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="tab2">
+    <div class="main_container">
+      <div class="sharesection">
+        <p class="feedback-head">Feed Back Form:</p>
+        <a href="javascript:void(0)" class="close-share"></a>
+        <table class="sharesectiontable">
+          <tr>
+            <td class="td1">
+              <input type="text" value="" name="" placeholder="First Name">
+            </td>
+            <td class="td2">
+              <select id="top-cntry">
+                <option value="0" selected="selected" data-imagesrc="images/country-flags/india-mini.png">India</option>
+                <option value="1" data-imagesrc="images/country-flags/austria-mini.png">Austria</option>
+                <option value="2" data-imagesrc="images/country-flags/france-mini.png">France</option>
+                <option value="3" data-imagesrc="images/country-flags/germany-mini.png">Germany</option>
+                <option value="4" data-imagesrc="images/country-flags/hungry-mini.png">Hungry</option>
+                <option value="5" data-imagesrc="images/country-flags/jamaica-mini.png">Jamaica</option>
+                <option value="6" data-imagesrc="images/country-flags/The-Czech-mini.png">The Czech Republic</option>
+              </select>
+              <input type="text" name="" class="mobilenum" placeholder="Mobile No." pattern="[0-9]{0,10}" title="Should be numbers" >
+            </td>
+            <td rowspan="2" class="td3">
+              <div class="relative">
+                <span class="txt-count">(<span id="rem_count">500</span>/500 characters left)</span>
+                <textarea cols="" rows="" placeholder="Type your message here..."   maxlength="500" class="add-topic"></textarea>
+              </div>
+            </td>
+            <td rowspan="2" class="td4">
+              <div class="submit-btn">
+                <button class="sub-btn">Submit</button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" value="" name="" placeholder="Last Name">
+            </td>
+            <td class="td1">
+              <input type="email" value="" name="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email ID">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+ </div>
+    <ul class="shareeditsec share tabpages">
+      <li class=""><a href="#tab1" class="tab tooltip" title="Share"><span class="shareicon"></span></a>
+      </li> 
+      <li class=""><a href="#tab2" class="tab tooltip" title="Feedback"><span class="editicon"></span></a>
+      </li>
+    </ul>
+</div>
+<!-- Main container -->
+  <!-- Header Section -->
+  <header class="landing-page">
+    <section class="clearfix header">
+      <!-- Logo-->
+      <div class="logo"><a href="javascript:void(0)"><img src="images/logo.png" class="f-left" alt="logo"></a>
+      </div>
+    </section>
+  </header>
+
+<!-- University Information -->
+<section class="university-infosection">
+  <div class="main_container">
+    <div class="main_container">
+      <div class="uniinfo_content">
+        <p class="form-heading">Before you start, please provide us the following information</p>
+        <div class="university-info clearfix">
+          <form>
+          <p>
+            <label>Select University</label>
+            <select class="chosen-select select_option">
+              <option>Select University1</option>
+              <option>Select University2</option>
+              <option>Select University3</option>
+              <option>Select University4</option>
+            </select>
+          </p>
+          <p>
+            <label>University Name</label>
+            <input type="text" value="" name="" class="inputstyle university_name">
+          </p>
+          <p>
+            <label>Select your Role</label>
+            <span class="radio-toolbar">
+            <input type="radio" id="radio1" name="radios1" value="all" checked>
+            <label for="radio1">I'm a Student</label>
+            <input type="radio" id="radio2" name="radios1"value="false">
+            <label for="radio2">I’m an Educator</label>
+            </span>
+          </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="form-btn clearfix">
+      <button class="next-btn" value="">Next</button>
+    </div>
+  </div>
+</section>
+<!-- Scripts -->
+<script src="js/jquery-latest.js"></script>
+<script src="js/jquery-ui-latest.js"></script>
+<script type='text/javascript' src='js/jquery.ddslick.min.js'></script>
+<script>
+//search dd
+	$('#top-cntry').ddslick({
+		onSelected: function(selectedData){
+			//callback function: do something with selectedData;
+		}   
+	});
+</script>
+<script src="js/plugin.js"></script>
+<script src="js/core.js"></script>
+</body>
+</html>

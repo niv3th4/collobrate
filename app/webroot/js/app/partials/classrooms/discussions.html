@@ -1,0 +1,141 @@
+<section class="rightwrapper">
+    <section class="pagesubnav">
+        <div class="clearfix">
+            <ul class="left-subnav clearfix">
+                <li>
+                    <a ui-sref="Views.Announcements">Announcements</a>
+                </li>
+                <li>
+                    <a ui-sref="Views.Discussions" class="active">Discussions</a>
+                </li>
+                <li>
+                    <a ui-sref="Views.Library">Library</a>
+                </li>
+                <li>
+                    <a ui-sref="Views.People">People</a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <a href="javascript:void(0)" class="sub-btn" id="dialog-link">Invite</a>
+            </div>
+        </div>
+    </section>
+    <!-- Right Content -->
+    <section class="pagecontent clearfix">
+        <div class="content-wrapper">
+            <div class="topbuttons">
+                <a ui-sref="Views.Discussions" class="follow active">All</a>
+                <!--<a ui-sref="Views.Discussions.Folded" class="follow">Folded</a>-->
+            </div>
+            <div class="clear"></div>
+            <div class="top-div">
+                <form name="discussionForm" id="discussionForm" novalidate ng-submit="submit()">
+                    <span class="txt-count">(<span id="rem_count">200</span>/200 characters left)</span>
+                    <input class="add-topic" type="text" name="topic" id="topic" placeholder="Topic of  the discussion…"
+                           ng-model="Discussion.topic" maxlength="200" required
+                           ng-class="{error: discussionForm.topic.$error.required && isSubmitted}"
+                            >
+                    <div class="main-box ques-box" ng-if="Discussion.type === 'question'">
+                        <textarea class="txt-area h235" name="body" id="body" placeholder="Type you question here…"
+                                  ng-model="Discussion.body" required
+                                  ng-class="{error: discussionForm.body.$error.required && isSubmitted}"></textarea>
+                        <div class="att-box clearfix">
+                            <div class="disc-room f-left">
+                                <div class="attachmentbox">
+                                    <span class="btn btn-success fileinput-button changepicsbtn attach-mail">
+                                    <span class="att-txt">Add files <span class="att-size">(Max 100 mb)</span></span>
+                                    <input type="file" name="file_path" id="file_path" nv-file-select uploader="uploader"
+                                           ng-model="Announcements.file_path" />
+                                    <ul>
+                                        <li ng-repeat="item in uploader.queue">{{ item.file.name }}</li>
+                                    </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="f-right">
+
+                                <button name="reset" type="reset" class="sub-btn cnl-btn">Cancel</button>
+                                <button name="reset" type="submit" class="sub-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-box poll-box" ng-if="Discussion.type === 'poll'">
+                        <textarea class="txt-area" name="body" id="body" placeholder="Type you question here…"
+                                  ng-model="Discussion.body" required
+                                  ng-class="{error: discussionForm.body.$error.required && isSubmitted}"></textarea>
+
+                        <div class="add-here">
+                            <div class="poll-choice" ng-repeat="choice in choices">
+                                <input type="text" class="ans-txtbx"
+                                       name="Pollchoice" id="Pollchoice"
+                                       placeholder="Type your answer here..."
+                                       required
+                                       >
+                                <a href="javascript:void(0)" class="close-btn delete-choice" ng-click="deleteChoice(choice.id)"></a>
+                            </div>
+                        </div>
+                        <div class="add-choice"><a href="javascript:void(0)" class="add-div"> + Add answer choice</a>
+                        </div>
+                        <div class="att-box clearfix">
+                            <div class="disc-room f-left">
+                                <div class="attachmentbox">
+                    <span class="btn btn-success fileinput-button changepicsbtn attach-mail">
+                    <span class="att-txt">Add files <span class="att-size">(Max 100 mb)</span></span>
+                    <input type="file" name="file_path" id="file_path" nv-file-select uploader="uploader"
+                           ng-model="Announcements.file_path" />
+                    <ul>
+                        <li ng-repeat="item in uploader.queue">{{ item.file.name }}</li>
+                    </ul>
+                    </span>
+                                </div>
+                            </div>
+                            <div class="f-right">
+
+                                <button name="reset" type="reset" class="sub-btn cnl-btn">Cancel</button>
+                                <button name="reset" type="submit" class="sub-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-box note-box" ng-if="Discussion.type === 'note'">
+                        <textarea ckeditor="ckeditorOptions" ng-model="Discussion.body" row="5"></textarea>
+
+                        <div class="att-box clearfix">
+                            <div class="disc-room f-left">
+                                <div class="attachmentbox">
+                                    <span class="btn btn-success fileinput-button changepicsbtn attach-mail">
+                                        <span class="att-txt">Add files <span class="att-size">(Max 100 mb)</span></span>
+                                        <input type="file" name="file_path" id="file_path" nv-file-select uploader="uploader"
+                                                   ng-model="Announcements.file_path" />
+                                        <ul>
+                                            <li ng-repeat="item in uploader.queue">{{ item.file.name }}</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="f-right">
+                                <button name="reset" type="reset" class="sub-btn cnl-btn">Cancel</button>
+                                <button name="reset" type="submit" class="sub-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <discussion-types></discussion-types>
+                </form>
+            </div>
+            <div class="tinyscrollbar" style="height: 100px;" scrollbar>
+                <div class="scrollbar">
+                    <div class="track">
+                        <div class="thumb">
+                            <div class="end">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewport">
+                    <div class="overview">
+                        <discussions></discussions>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,171 @@
+.container {
+    overflow: hidden;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+.logo img{
+    width: 200px;
+}
+
+#viewport, .navigation-main {
+    height: 950px;
+    background: #ccc;
+    overflow: auto;
+}
+
+.navigation-main {
+    background-color: #232323;
+}
+
+#overlayScreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#dialog, #assign-dialog{
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    display: block;
+}
+
+#assign-dialog{
+    top: 20%;
+}
+
+
+.signuplogin a.close-link{
+    float: right;
+    border: none;
+}
+
+.signIn a.close-link{
+    background : #6E6E6E;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding : 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    float: right;
+}
+
+#for-pass{
+    background: url(../images/landing/for-pass.png) no-repeat 0px 0px; padding-left: 30px; display: inline-block; line-height: 20px; font-size: 12px; font-family: 'open_sansregular'; color: #6c6b6b; }
+}
+#for-pass:hover{
+    text-decoration: underline;
+}
+
+.pass-strength{
+    margin-left : 10px;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+}
+
+.pass-strength.weak{
+    background: red;
+}
+
+.pass-strength.medium{
+    background: orange;
+}
+
+.pass-strength.strong{
+    background: green;
+}
+
+.reCaptcha{
+    display: inline-block;
+    margin-left: 260px;
+    float: left;
+}
+
+/* OVERLAYS */
+
+.doc-popup{
+    display: block;
+}
+
+.overlays{
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: table;
+}
+
+.overlay{
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.pagesubnav li a{
+    display: inline;
+    margin-right: 20px;
+}
+
+.rightwrapper
+{
+    height: 100%;
+}
+
+.pagecontent{
+    margin-left: 20px;
+}
+
+.classroom{
+    cursor: pointer;
+}
+
+.disc-list{
+    width: 665px;
+}
+
+.clk-tt{
+    display: block;
+}
+
+input.error, textarea.error, input[type="radio"].error{
+    background-color: #ff0000 !important;
+}
+
+input.error::-webkit-input-placeholder, textarea.error::-webkit-input-placeholder {
+    color: #fff !important;
+}
+
+input.valid, textarea.valid{
+    background-color: #F1F1F1 !important;
+    color : #F1F1F1 !important;
+}
+
+button{
+    border : none;
+    -webkit-appearence : none;
+}
+
+.middivouter .listbox .datetime{
+    margin-right: 30px;
+}
+/* Tiny Scrollbar */
+.tinyscrollbar { width: 100%; margin: 20px 0 10px; }
+.tinyscrollbar .viewport { width: 95%; height: 300px; overflow: hidden; position: relative; }
+.tinyscrollbar .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+.tinyscrollbar .scrollbar{ background: transparent url(images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+.tinyscrollbar .track { background: transparent url(images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+.tinyscrollbar .thumb { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+.tinyscrollbar .thumb .end { background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+.tinyscrollbar .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }

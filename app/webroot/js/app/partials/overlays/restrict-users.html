@@ -1,0 +1,32 @@
+<div id="rest-dialog"
+     ng-controller="peopleCtrl"
+     class="create-popup ui-dialog-content ui-widget-content"
+     style="display: block; width: 665px; min-height: 130px; max-height: none; height: auto;margin: 0 auto;"
+    >
+    <div class="pop-wind clearfix">
+        <div class="pop-head clearfix">
+            <span>Restrict Access</span>
+            <a class="close-link" href="#">
+                <span class="icon-cross"></span></a>
+        </div>
+        <div class="pop-content clearfix">
+            <div class="assign-pop">
+                <form class="form-data create-popup" name="restrictForm" ng-submit="restrictUser()" novalidate>
+                    <p>Choose people to restrict</p>
+                    <select ui-select2 ng-model="selectedUsers" multiple="multiple"
+                            name="selectedUsers" id="selectedUsers"
+                            data-placeholder="Choose members" ng-required="true"
+                            style="width: 600px;margin-top: 10px"
+                            >
+                        <option ng-repeat="user in users" value="{{user.AppUser.id}}">{{user.AppUser.fname}} {{user.AppUser.lname}}</option>
+                    </select>
+                    <p class="assign-txt mb30">Please note that you can unrestrict access anytime you want from people section by click on unrestrict button</p>
+                    <div class="clear"></div>
+                    <div class="submit-btn">
+                        <button type="submit" class="sub-btn" value="Assign">Restrict Access</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

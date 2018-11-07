@@ -1,0 +1,45 @@
+<!--Login dialog-->
+<div id="dialog" class="signIn" ng-controller="loginCtrl">
+    <div class="pop-wind clearfix">
+        <a class="close-link" href="javascript:void(0);">
+            <span class="icon-cross"></span>
+        </a>
+        <div class="signup-content">
+            <p class="signup-heading">CollabRate Login</p>
+            <form action="" method="post" novalidate id="loginForm" name="loginForm">
+                <table class="signup-form">
+                    <tr>
+                        <td>
+                            <p class="sign-txt">Username</p>
+                            <div class="sign-txtbx">
+                                <input type="email" required="required" placeholder="email address" name="email" ng-model="login.email">
+                            </div>
+                        </td>
+                        <td>
+                            <p class="sign-txt">Password</p>
+                            <div class="sign-txtbx">
+                                <input type="password" name="password" required="required" placeholder="password" ng-model="login.password" />
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="login-check">
+                                <input type="checkbox" name="checkbox2" id="checkbox2" class="css-checkbox" ng-model="login.isRemember" />
+                                <label for="checkbox2" class="css-label">Stay signed in</label>
+                            </div>
+                        </td>
+                        <td>
+                            <a ng-href="javascript:void(0)" id="for-pass">Forgot password</a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="form-btn clearfix">
+                    <div class="submit-btn">
+                        <input type="submit" class="sub-btn" ng-click="submit(loginForm)" value="Login">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

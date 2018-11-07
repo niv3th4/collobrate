@@ -1,0 +1,41 @@
+<div id="assign-dialog"
+     class="create-popup ui-dialog-content ui-widget-content"
+     style="display: block; width: auto; min-height: 130px; max-height: none; height: auto;"
+     ng-controller="peopleCtrl"
+     >
+    <div class="pop-wind clearfix">
+        <div class="pop-head clearfix">
+            <span>Assign Moderators</span>
+            <a class="close-link" href="#">
+                <span class="icon-cross"></span></a>
+        </div>
+        <div class="pop-content clearfix">
+            <div class="assign-pop">
+                <form class="form-data create-popup" name="assignForm" ng-submit="submitModerators()" novalidate>
+                    <p>Choose people to assign moderation powers</p>
+                    <select ui-select2 ng-model="selectedUsers" multiple="multiple"
+                            name="selectedUsers" id="selectedUsers"
+                            data-placeholder="Choose members" ng-required="true"
+                            style="width: 600px;margin-top: 10px"
+                            >
+                        <option ng-repeat="user in users" value="{{user.AppUser.id}}">{{user.AppUser.fname}} {{user.AppUser.lname}}</option>
+                    </select>
+
+                    <p class="assign-txt">Choose moderation powers</p>
+                    <div class="assign-ck">
+                        <input id="up1" type="checkbox" name="up1" value="others">
+                        <label for="up1" class="radio-lbl">Upload content in Library</label>
+                        <input id="up2" type="checkbox" name="up2" value="others">
+                        <label for="up2" class="radio-lbl">Create announcements</label>
+                        <input id="up3" type="checkbox" name="up3" value="others">
+                        <label for="up3" class="radio-lbl">Dummy </label>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="submit-btn">
+                        <button type="submit" class="sub-btn" value="Assign">Assign</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+{
+    "id": "4e80777d-0740-a091-0ff6-72fb328ea9dd",
+    "name": "users",
+    "timestamp": 1405666206681,
+    "requests": [
+        {
+            "collectionId": "4e80777d-0740-a091-0ff6-72fb328ea9dd",
+            "id": "530918ff-48c6-83fe-8988-f955328d87f2",
+            "name": "logout",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/logout.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e4fe5d-cb68-4029-b168-0b960130a31c\n",
+            "data": [],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407516389194
+        },
+        {
+            "collectionId": "4e80777d-0740-a091-0ff6-72fb328ea9dd",
+            "id": "b5d52811-1824-2cd0-b18b-df291f097fa2",
+            "name": "login",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/login.json",
+            "method": "POST",
+            "headers": "",
+            "data": [
+                {
+                    "key": "data[AppUser][email]",
+                    "value": "harsh@mailinator.com",
+                    "type": "text"
+                },
+                {
+                    "key": "data[AppUser][password]",
+                    "value": "harshharsh",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407516387450
+        }
+    ]
+}

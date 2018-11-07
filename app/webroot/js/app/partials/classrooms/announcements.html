@@ -1,0 +1,82 @@
+<section class="rightwrapper">
+    <section class="pagesubnav">
+        <div class="clearfix">
+            <ul class="left-subnav clearfix">
+                <li>
+                    <a ui-sref="Views.Announcements" class="active">Announcements</a>
+                </li>
+                <li>
+                    <a ui-sref="Views.Discussions">Discussions</a>
+                </li>
+                <li>
+                    <a ui-sref="Views.Library">Library</a>
+                </li>
+                <li>
+                    <a ui-sref="Views.People">People</a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <a href="javascript:void(0)" class="sub-btn" id="dialog-link">Invite</a>
+            </div>
+        </div>
+    </section>
+    <section class="pagecontent clearfix">
+        <div class="content-wrapper" id="announcements">
+            <!--content top-->
+            <div class="top-div announcement">
+                <span class="txt-count">(<span id="rem_count">200</span>/200 characters left)</span>
+
+                <form name="announcementForm" id="announcementForm" novalidate ng-submit="submit()">
+                    <input class="add-topic" name="subject" id="subject" type="text" placeholder="Subject" maxlength="200"
+                           ng-model="Announcements.subject" required
+                           ng-class="{error: announcementForm.subject.$error.required && isSubmitted}">
+
+                    <div class="ques-box">
+                        <textarea class="txt-area" name="body" id="body" placeholder="Type announcement text here…"
+                                  style="resize: none; overflow-y: hidden;" required ng-model="Announcements.body"
+                                  ng-class="{error: announcementForm.body.$error.required && isSubmitted}"></textarea>
+
+                        <div class="att-box clearfix">
+                            <div class="disc-room f-left">
+                                <div class="attachmentbox">
+                                  <span class="btn btn-success fileinput-button changepicsbtn attach-mail">
+                                  <span class="att-txt">Add files
+                                  <span class="att-size">(Max 100 mb)</span></span>
+                                    <input type="file" name="file_path" id="file_path" nv-file-select uploader="uploader"
+                                           ng-model="Announcements.file_path" />
+                                    <ul>
+                                        <li ng-repeat="item in uploader.queue">{{ item.file.name }}</li>
+                                    </ul>
+                                  </span>
+                                </div>
+                            </div>
+                            <div class="f-right">
+                                <button type="reset" name="reset" class="follow">Cancel</button>
+                                <button type="submit" name="submit" class="sub-btn chk-file">Create</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--content list-->
+            <div class="announcement-outer" style="width: 697px;">
+                <div class="tinyscrollbar" style="height: 300px;" scrollbar>
+                    <div class="scrollbar">
+                        <div class="track">
+                            <div class="thumb">
+                                <div class="end">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewport">
+                        <div class="overview">
+                            <announcements></announcements>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>

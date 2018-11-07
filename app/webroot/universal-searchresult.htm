@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Pyoopil</title>
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="style.css" rel="stylesheet">
+<link href="css/jquery.tagit.css" rel="stylesheet">
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+     <script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body class="bg-color">
+<!-- Header -->
+<header>
+  <section class="clearfix header">
+    <!-- Logo-->
+    <div class="logo"><a href="javascript:void(0)"><img src="images/logo.png" class="f-left" alt="logo"></a>
+      <span class="dd-block page-title"><a href="javascript:void(0)" class="dd-click">English 101<span class="title-arr"></span></a>
+      <div class="arr-dd">
+        <ul>
+          <li><a href="javascript:void(0)" id="view-dlink">View Info</a>
+            <!--View info Dialog-->
+            <div id="view-dialog" class="create-popup">
+              <div class="pop-wind clearfix">
+                <div class="pop-head clearfix">
+                  <span>Class Info</span>
+                  <a class="close-link" href="#">
+                  <span class="icon-cross"></span></a>
+                </div>
+                <div class="pop-content clearfix">
+                  <div class="iframe-container"><iframe frameborder="0" scrolling="no" src="popup-viewinfo-form.htm"></iframe></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="javascript:void(0)" id="clone-dlink">Clone Classroom</a>
+            <!--View info Dialog-->
+            <div id="clone-dialog" class="create-popup">
+              <div class="pop-wind clearfix">
+                <div class="pop-head clearfix">
+                  <span>Clone Classroom</span>
+                  <a class="close-link" href="#">
+                  <span class="icon-cross"></span></a>
+                </div>
+                <div class="pop-content clearfix">
+                  <div class="iframe-container"><iframe frameborder="0" scrolling="no" src="popup-clone-form.htm"></iframe></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="javascript:void(0)">Archive Classroom</a>
+          </li>
+          <li class="lastli"><a href="javascript:void(0)">Reset Access Code</a>
+          </li>
+        </ul>
+      </div>
+      </span>
+    </div>
+    <div class="search">
+      <div class="uni-search clearfix">
+        <a href="javascript:void(0)" class="search-bx"></a>
+        <input type="text" placeholder="Search.." class="uni-searchinput">
+      </div>
+      <!-- Top Notification -->
+      <div class="right-slide">
+        <div class="toprightsection tabpages">
+          <ul>
+            <li><a href="#tab1" class="calenderdescrip tab">
+              <div class="top-icon cal"></div>
+              <span class="noti-num">5</span></a>
+            </li>
+            <li><a href="#tab2" class="msgdescrip tab">
+              <div class="top-icon chat"></div>
+              <span class="noti-num">5</span></a>
+            </li>
+            <li><a href="#tab3" class="tab">
+              <div class="top-icon noti"></div>
+              <span class="noti-num">11</span></a>
+            </li>
+            <li><a href="#tab4" class="tab">
+              <div class="top-icon msg"></div>
+              <span class="noti-num">4</span></a>
+            </li>
+            <li class="dock-bk lastli"><a href="#" class="active tab"><img src="images/arrow_back.png" class="mt5" alt=""></a>
+            </li>
+          </ul>
+          
+          <!-- Notification Right Window -->
+          <div class="notification_details">
+            <div id="tab1">
+              <p>Calender Panel</p>
+            </div>
+            <div id="tab2">
+              <p>Chat Panel</p>
+            </div>
+            <div id="tab3">
+              <p>Notification Panel</p>
+            </div>
+            <div id="tab4">
+              <p>Message Panel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<div class="container">
+  <!-- Left Navigation -->
+  <nav class="navigation-main">
+    <ul class="primary">
+      <li class="pdiscover">
+        <a href="#" class="lst-a myroom"><span class="icon"></span>
+        <span class="label">My Room</span></a>
+      </li>
+      <li class="pdiscover hassub active">
+        <a href="classroom.htm" class="lst-a classrooms"><span class="icon"></span>
+        <span class="label">Classrooms</span></a>
+        <div class="sub">
+          <!--Classroom sub nav-->
+          <ul class="menu-coll">
+            <li class="sub-menu pre-contact">
+              <a href="classroom.htm">
+              <p class="submenu-heading">All<br>
+                Classroom</p>
+              </a>
+              <!--Classroom Vertical Scroller-->
+              <div class="clearfix">
+                <div class="arrow_up"><img src="images/arrow-up.png" alt="Up"/></div>
+                <div class="scroll-pane">
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="classroom-discussion.htm">
+                    <div class="classouter">
+                      <div class="doc-list">
+                        <div class="doc-top">
+                          <p class="subject">CHEMISTRY <br>
+                            101</p>
+                          <span>by</span>
+                          <span>Shivanand Dasgupta</span>
+                          <span class="totalstudent">(35 Students)</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="arrow_down"><img src="images/arrow-down.png" alt="Down"/></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pdiscover hassub"><a href="institution.htm" class="lst-a institutionroom"><span class="icon"></span>
+        <span class="label">Institution Room</span></a>
+        <div class="sub">
+          <!--Institution sub nav-->
+          <ul class="menu-coll">
+            <li class="sub-menu pre-contact ">
+              <a href="institution.htm">
+              <p class="submenu-heading">Institution<br>
+                Room</p>
+              </a>
+              <div class="clearfix">
+                <div class="arrow_up"><img src="images/arrow-up.png" alt="Up"/></div>
+                <div class="scroll-pane">
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox">
+                      <div class="inst-icon"></div>
+                      <p class="ins-head">Institution Name 2</p>
+                      <p class="sub-head">Department Degree</p>
+                      <p class="sub-head">Diploma Semester</p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="arrow_down"><img src="images/arrow-down.png" alt="Down"/></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pdiscover hassub">
+        <a href="group.htm" class="lst-a groups"><span class="icon"></span>
+        <span class="label">Groups</span></a>
+        <div class="sub">
+          <!--Classroom sub nav-->
+          <ul class="menu-coll">
+            <li class="sub-menu pre-contact"><a href="group.htm">
+              <p class="submenu-heading">All<br>
+                Groups</p>
+              </a>
+              <div class="clearfix">
+                <div class="arrow_up"><img src="images/arrow-up.png" alt="Up"/></div>
+                <div class="scroll-pane">
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                  <div class="scroll-content-item"><a href="#">
+                    <div class="inst-mbox grp-mbox">
+                      <div class="grps-icon"></div>
+                      <p class="grp-head">Group 1</p>
+                      <p class="grpsub-head">36</p>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="arrow_down"><img src="images/arrow-down.png" alt="Down"/></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="pdiscover">
+        <a href="pyoopilhub.htm" class="lst-a hub"><span class="icon hub-icon"></span>
+        <span class="label">pyoopil hub</span></a>
+      </li>
+      <li class="pdiscover">
+        <a href="my-account.htm" class="lst-a flname"><span class="icon"><img src="images/chat1.jpg" alt="fname" /></span>
+        <span class="label">first last name</span></a>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="logout"><img src="images/logout.png" alt=""></a>
+         <ul class="logout-lst">
+          <li class="lastli"><a href="logout.htm">Logout</a>
+          </li>        </ul>
+        </li>
+        </ul>
+  </nav>
+  <!-- Right side Content  -->
+  <section class="rightwrapper">
+    <!-- Right Sub Navigation -->
+    <section class="pagesubnav">
+      <div class="clearfix">
+        <ul class="left-subnav clearfix">
+          <li><a href="classroom-discussion.htm">Discussions</a>
+          </li>
+          <li><a href="classroom-announcment.htm">Announcements</a>
+          </li>
+          <li><a href="classroom-library.htm">Library</a>
+          </li>
+          <li><a href="classroom-people.htm">People</a>
+          </li>
+          <li><a href="classroom-submission.htm">Submissions</a>
+          </li>
+          <li><a href="classroom-reports.htm">Reports</a>
+          </li>
+          <li><div class="loader"><img src="images/loading/ajax-loader.gif" alt="loading"></div></li>
+        </ul>
+        <div class="nav-right">
+          <a href="javascript:void(0)" class="sub-btn" id="dialog-link">Invite</a>
+          <a href="javascript:void(0)" class="nav-search"></a>
+          <div class="search-input">
+            <div class="search-panel">
+              <input type="text" placeholder="Search" >
+              <a href="classroom-searchresult.htm" class="search-btn"></a>
+            </div>
+          </div>
+        </div>
+        <!--popup-->
+        <div id="dialog" class="create-popup invite">
+          <div class="pop-wind clearfix">
+            <div class="pop-head clearfix">
+              <span>Invite</span>
+              <a class="close-link" href="#">
+              <span class="icon-cross"></span></a>
+            </div>
+            <div class="pop-content clearfix">
+              <div class="assign-pop">
+                <form class="form-data create-popup">
+                  <div class="clearfix">
+                    <div class="invi-left">
+                      <div class="sel-univ">
+                        <p class="uni-topic">Select University</p>
+                        <select class="chosen-select select_option">
+                          <option>University Association 1</option>
+                          <option>University Association 2</option>
+                          <option>University Association 3</option>
+                          <option>University Association 4</option>
+                        </select>
+                      </div>
+                      <div  id="catalog">
+                        <div class="accordionsections">
+                          <div class="as1tab head-acc">Department 1</div>
+                          <div class="as1tabdec">
+                            <div class="as1tab sub1-acc">Degree 1 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 1 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 2 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 3 (100 people)</div>
+                            <div class="as1tab sub1-acc">Degree 2 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Tab2 Dec</div>
+                            <div class="as1tab sub1-acc">Degree 3 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Tab3 Dec</div>
+                          </div>
+                          <div class="as1tab head-acc">Department 2</div>
+                          <div class="as1tabdec">
+                            <div class="as1tab sub1-acc">Degree 1 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 1 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 2 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 3 (100 people)</div>
+                            <div class="as1tab sub1-acc">Degree 2 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 2</div>
+                            <div class="as1tab sub1-acc">Degree 3 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 2</div>
+                          </div>
+                          <div class="as1tab head-acc">Department 3</div>
+                          <div class="as1tabdec">
+                            <div class="as1tab sub1-acc">Degree 1 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 1 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 2 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 3 (100 people)</div>
+                            <div class="as1tab sub1-acc">Degree 2 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section 1</div>
+                            <div class="as1tab sub1-acc">Degree 3 (100 people)</div>
+                            <div class="as1tabdec sub2-acc">Section </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="invi-right msg-scroll">
+                      <input name="tags" id="mySingleField" disabled="true" value="Gaurav Sharma">
+                <!-- fetches all the value -->
+                <ul id="singleFieldTags" class="pop-input">
+                </ul>
+                      <div class="invi-space">
+                        <div id="cart">
+                          <div class="ui-widget-content">
+                            <ol>
+                              <li class="placeholder">Drag here</li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="submit-btn two-btn">
+                    <input type="submit" class="sub-btn cnl-btn" value="Cancel">
+                    <input type="submit" class="sub-btn" value="Send Invite">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Right Content -->
+    <section class="pagecontent clearfix">
+      <div class="library-wrapper">
+        <div class="uni-searchresult tabpages">
+          <ul class="topbuttons searchtab">
+            <li><a href="#div1" class="follow active tab">All Results</a>
+            </li>
+            <li><a href="#div2" class="follow tab">People</a>
+            </li>
+            <li><a href="#div3" class="follow tab">Classrooms</a>
+            </li>
+            <li><a href="#div4" class="follow tab">Groups</a>
+            </li>
+          </ul>
+          <div class="tabpage" id="div1">
+            <p class="uni-title">People</p>
+            <div class="people-lst">
+              <ul>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <span class="mod-icon"></span>
+                      <a href="javascript:void(0)"><img src="images/follow1.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Deepti Singh</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message1"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd1"><img src="images/follow-icon.png" alt=""></a>
+                    <!--Recommend Dialog-->
+                    
+                  </div>
+                </li>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <span class="mod-icon"></span>
+                      <a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Sumit Patil</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message2"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd2"><img src="images/follow-icon.png" alt=""></a>
+                    <!--Recommend Dialog-->
+                    
+                  </div>
+                </li>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <a href="javascript:void(0)"><img src="images/follow3.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Apeksha Verma</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message3"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd3"><img src="images/follow-icon.png" alt=""></a>
+                    <!--Recommend Dialog-->
+                    
+                  </div>
+                </li>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <span class="mod-icon"></span>
+                      <a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Parul Gupta</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message4"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd4"><img src="images/follow-icon.png" alt=""></a>
+                    <!--Recommend Dialog-->
+                    
+                  </div>
+                </li>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <a href="javascript:void(0)"><img src="images/follow2.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Gaurav Sharma</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message5"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd5"><img src="images/follow-icon.png" alt=""></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <p class="uni-title">Classroom</p>
+            <ul class="tile-lst">
+              <li>
+                <a href="classroom-discussion.htm">
+                <div class="doc-top">
+                  <p class="subject">ANJALI CLASSROOM</p>
+                  <div>by</div>
+                  <div><span class="online"></span>Shivanand Dasgupta</div>
+                  <div class="totalstudent">(35 Students)</div>
+                </div>
+                <div class="doc-end"> Amity University </div>
+                </a>
+              </li>
+              <li>
+                <a href="classroom-discussion.htm">
+                <div class="doc-top">
+                  <p class="subject">ANJALI CLASSROOM</p>
+                  <div>by</div>
+                  <div><span class="offline"></span>Shivanand Dasgupta</div>
+                  <div class="totalstudent">(35 Students)</div>
+                </div>
+                <div class="doc-end"> Amity University </div>
+                </a>
+              </li>
+              <li>
+                <a href="classroom-discussion.htm">
+                <div class="doc-top">
+                  <p class="subject">ANJALI CLASSROOM</p>
+                  <div>by</div>
+                  <div><span class="offline"></span>Shivanand Dasgupta</div>
+                  <div class="totalstudent">(35 Students)</div>
+                </div>
+                <div class="doc-end"> Amity University </div>
+                </a>
+              </li>
+            </ul>
+            <p class="uni-title">Groups</p>
+            <ul class="group-lst">
+              <li>
+                <div class="group-tile">
+                  <div class="group-txt">
+                    <p class="group-title">Group 1</p>
+                    <p class="grp-cap">By Anjali Verma</p>
+                    <p class="grp-num">28</p>
+                    <div class="grps-icon"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="group-tile">
+                  <div class="group-txt">
+                    <p class="group-title">Group 1</p>
+                    <p class="grp-cap">By Anjali Verma</p>
+                    <p class="grp-num">28</p>
+                    <div class="grps-icon"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="group-tile grp-nog">
+                  <div class="group-txt">
+                    <span class="lock-icon"></span>
+                    <p class="group-title">Group 1</p>
+                    <p class="grp-cap">By Anjali Verma</p>
+                    <p class="grp-num">28</p>
+                    <div class="grps-icon"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="group-tile">
+                  <div class="group-txt">
+                    <p class="group-title">Group 1</p>
+                    <p class="grp-cap">By Anjali Verma</p>
+                    <p class="grp-num">28</p>
+                    <div class="grps-icon"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="tabpage cate" id="div2">
+            <p class="uni-title">People</p>
+            <div class="people-lst">
+              <ul>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <span class="mod-icon"></span>
+                      <a href="javascript:void(0)"><img src="images/follow1.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Deepti Singh</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message1"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd1"><img src="images/follow-icon.png" alt=""></a>
+                    <!--Recommend Dialog-->
+                    
+                  </div>
+                </li>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <span class="mod-icon"></span>
+                      <a href="javascript:void(0)"><img src="images/classroom/follow-2.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Sumit Patil</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message2"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd2"><img src="images/follow-icon.png" alt=""></a>
+                    <!--Recommend Dialog-->
+                    
+                  </div>
+                </li>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <a href="javascript:void(0)"><img src="images/follow3.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Apeksha Verma</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message3"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd3"><img src="images/follow-icon.png" alt=""></a>
+                    <!--Recommend Dialog-->
+                    
+                  </div>
+                </li>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <span class="mod-icon"></span>
+                      <a href="javascript:void(0)"><img src="images/classroom/follow-3.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Parul Gupta</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message4"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd4"><img src="images/follow-icon.png" alt=""></a>
+                    <!--Recommend Dialog-->
+                    
+                  </div>
+                </li>
+                <li class="follow-box">
+                  <div class="relative clearfix">
+                    <span class="dd-block follow-dd"><a href="javascript:void(0)" class="add-icon dd-click"></a>
+                    <div class="arr-dd">
+                      <ul>
+                        <li><a href="javascript:void(0)">Unfollow</a>
+                        </li>
+                        <li class="lastli"><a href="javascript:void(0)">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                    </span>
+                    <div class="follow-left">
+                      <a href="javascript:void(0)"><img src="images/follow2.jpg" alt="" class="follow-img"></a>
+                      <span class="online"></span>Online </div>
+                    <div class="follow-right">
+                      <p class="cname"><a href="javascript:void(0)">Gaurav Sharma</a>
+                      </p>
+                      <p class="cpost">Student</p>
+                      <p class="cpost">Degree</p>
+                      <p class="cclg">Lovely Professional University</p>
+                    </div>
+                  </div>
+                  <div class="follow-footer">
+                    <a href="javascript:void(0)" class="" title="message5"><img src="images/mail-icon.png" alt=""></a>
+                    <!--Message Dialog-->
+                    
+                    <a href="javascript:void(0)" class="last " title="recmd5"><img src="images/follow-icon.png" alt=""></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tabpage cate" id="div3">
+            <p class="uni-title">Classroom</p>
+            <ul class="tile-lst">
+              <li>
+                <a href="classroom-discussion.htm">
+                <div class="doc-top">
+                  <p class="subject">ANJALI CLASSROOM</p>
+                  <div>by</div>
+                  <div><span class="online"></span>Shivanand Dasgupta</div>
+                  <div class="totalstudent">(35 Students)</div>
+                </div>
+                <div class="doc-end"> Amity University </div>
+                </a>
+              </li>
+              <li>
+                <a href="classroom-discussion.htm">
+                <div class="doc-top">
+                  <p class="subject">ANJALI CLASSROOM</p>
+                  <div>by</div>
+                  <div><span class="offline"></span>Shivanand Dasgupta</div>
+                  <div class="totalstudent">(35 Students)</div>
+                </div>
+                <div class="doc-end"> Amity University </div>
+                </a>
+              </li>
+              <li>
+                <a href="classroom-discussion.htm">
+                <div class="doc-top">
+                  <p class="subject">ANJALI CLASSROOM</p>
+                  <div>by</div>
+                  <div><span class="offline"></span>Shivanand Dasgupta</div>
+                  <div class="totalstudent">(35 Students)</div>
+                </div>
+                <div class="doc-end"> Amity University </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tabpage cate" id="div4">
+            <p class="uni-title">Groups</p>
+            <ul class="group-lst">
+              <li>
+                <div class="group-tile">
+                  <div class="group-txt">
+                    <p class="group-title">Group 1</p>
+                    <p class="grp-cap">By Anjali Verma</p>
+                    <p class="grp-num">28</p>
+                    <div class="grps-icon"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="group-tile">
+                  <div class="group-txt">
+                    <p class="group-title">Group 1</p>
+                    <p class="grp-cap">By Anjali Verma</p>
+                    <p class="grp-num">28</p>
+                    <div class="grps-icon"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="group-tile grp-nog">
+                  <div class="group-txt">
+                    <span class="lock-icon"></span>
+                    <p class="group-title">Group 1</p>
+                    <p class="grp-cap">By Anjali Verma</p>
+                    <p class="grp-num">28</p>
+                    <div class="grps-icon"></div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="group-tile">
+                  <div class="group-txt">
+                    <p class="group-title">Group 1</p>
+                    <p class="grp-cap">By Anjali Verma</p>
+                    <p class="grp-num">28</p>
+                    <div class="grps-icon"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.js"></script>
+<script type='text/javascript' src='js/tag-it.min.js'></script>
+<script>
+//tagit
+$(function(){
+	//close
+	
+	var sampleTags = ['Ahmed','Ram','Mohan','Swati','Nikhil','Manish','Gaurav','Aaliyah','Apeksha','Deepti','Parul'];
+	$('#singleFieldTags,#singleFieldTags2').tagit({
+		availableTags: sampleTags,
+		// This will make Tag-it submit a single form value, as a comma-delimited field.
+		singleField: true,
+		singleFieldNode: $('#mySingleField,#mySingleField2')
+	});
+});	
+
+</script>
+<script src="js/plugin.js"></script>
+<script src="js/core.js"></script>
+</body>
+</html>

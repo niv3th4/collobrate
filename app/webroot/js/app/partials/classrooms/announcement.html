@@ -1,0 +1,28 @@
+<div class="middivouter" ng-repeat="announcement in announcements" announcement="announcement">
+    <div class="listbox">
+        <div class="imgbox">
+            <a href="javascript:void(0)">
+                <img src="images/follow1.jpg">
+            </a>
+        </div>
+        <div class="userinfo">
+            <h4>
+                {{ announcement.Announcement.subject }}
+            <span>
+              <a href="javascript:viod(0)">by {{ announcement.AppUser.fname}} {{ announcement.AppUser.lname }}</a>
+            </span>
+            </h4>
+            <div class="datetime clearfix">
+                <span class="attach-icon" ng-if="announcement.Announcement.file_path"></span>
+                {{ announcement.Announcement.created }}
+            </div>
+        </div>
+        <p>
+            {{ announcement.Announcement.body }}
+        </p>
+        <div class="cl" ng-if="announcement.Announcement.file_path">
+            <a class="dlfile" href="javascript:void(0)">bill1.pptx.42kb</a>
+            <a class="down-icon" href="javascript:void(0)"></a>
+        </div>
+    </div>
+</div>

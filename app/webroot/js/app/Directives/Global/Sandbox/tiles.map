@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "tiles.js",
+  "sourceRoot": "",
+  "sources": [
+    "tiles.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,EAAA,OAAO,CAAC,MAAR,CAAe,oBAAf,CACA,CAAC,OADD,CACS,OADT,EACkB;IAAC,UAAD,EAAa,SAAC,QAAD,GAAA;AAE7B,UAAA,KAAA;aAAM;AACU,QAAA,eAAA,GAAA;AACZ,iBAAO;AAAA,YACP,QAAA,EAAW,GADJ;AAAA,YAEP,WAAA,EAAc,yDAFP;WAAP,CADY;QAAA,CAAd;;qBAAA;;WAH2B;IAAA,CAAb;GADlB,CAAA,CAAA;AAAA"
+}

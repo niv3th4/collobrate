@@ -1,0 +1,65 @@
+<a href="javascript:void(0)" id="assign-link">Request for Signup</a>
+<!--signup dialog-->
+<div id="assign-dialog" class="signup">
+    <div class="pop-wind clearfix">
+        <a class="close-link" href="javascript:void(0);">
+            <span class="icon-cross"></span></a>
+        <div class="signup-content">
+            <p class="signup-heading">Request for Sign up</p>
+            <p class="signup-subhd">Please fill in the details and we will get back to you shortly!!</p>
+            <form action="" method="post" name="registerForm" id="registerForm">
+                <table class="signup-form">
+                    <tr>
+                        <td>
+                            <p class="sign-txt">First Name</p>
+                            <div class="sign-txtbx">
+                                <input type="text" name="firstname" placeholder="" required tabindex="1" ng-model="register.firstname">
+                                <span class="required"></span>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="sign-txt">Last Name</p>
+                            <div class="sign-txtbx">
+                                <input type="text" name="lastname" placeholder="" required tabindex="1" ng-model="register.lastname">
+                                <span class="required"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="sign-txt">Email</p>
+                            <div class="sign-txtbx">
+                                <input type="email" tabindex="1" name="email" placeholder="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required ng-model="register.email">
+                                <span class="required"></span>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="sign-txt">Mobile No.</p>
+                            <div class="sign-txtbx">
+                                <input type="text" name="mobile" tabindex="1" placeholder="" pattern="[0-9]{0,10}" title="Should be 10 Numbers" required ng-model="register.mobile">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="sign-txt">Institution Name</p>
+                            <div class="sign-txtbx">
+                                <input type="text" name="" tabindex="1" placeholder="" required class=" long-txtbx" ng-model="register.institution">
+                                <span class="required"></span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="form-btn clearfix">
+                    <div class="instrc">
+                        <img src="images/landing/star.png" alt="req">
+                        <p class="instr-txt">represents mandatory fields</p>
+                    </div>
+                    <div class="submit-btn">
+                        <input type="submit" class="sub-btn" value="Submit" ng-click="submit(registerForm)">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

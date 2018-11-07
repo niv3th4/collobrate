@@ -1,0 +1,346 @@
+{
+    "id": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+    "name": "discussions",
+    "timestamp": 1403626379090,
+    "requests": [
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "13b77092-2ad1-4f94-3f04-12b413c66d3d",
+            "name": "getreplies.json",
+            "description": "get paginated replies",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/Discussions/getreplies.json?page=1&discussion_id=37",
+            "method": "GET",
+            "headers": "X-AuthTokenHeader: 53e581e5-b6f0-4d61-853e-10550130a31c\n",
+            "data": [
+                {
+                    "key": "data[type]",
+                    "value": "Discussion",
+                    "type": "text"
+                },
+                {
+                    "key": "data[id]",
+                    "value": "48",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407558106375
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "1c820f99-5fec-d0c5-d863-acb8b60dc615",
+            "name": "addReply.json",
+            "description": "add a reply (comment) to a discussion",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/Discussions/addReply.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e581e5-b6f0-4d61-853e-10550130a31c\n",
+            "data": [
+                {
+                    "key": "discussion_id",
+                    "value": "49",
+                    "type": "text"
+                },
+                {
+                    "key": "comment",
+                    "value": "sadasdas",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407557494226
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "2ae4856d-d542-4135-a38b-96d984d2bba1",
+            "name": "add.json (note example)",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/Discussions/add.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e581e5-b6f0-4d61-853e-10550130a31c\n",
+            "data": [
+                {
+                    "key": "data[Discussion][topic]",
+                    "value": "What is the discussion",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Discussion][body]",
+                    "value": "the body will contain data pushed from ckeditor such as <b>this is bold</b>",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Discussion][type]",
+                    "value": "note",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407552339149
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "460a5116-e6dd-db58-c4b6-401ed437bbb7",
+            "name": "delete.json",
+            "description": "delete a discussion or a reply",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/Discussions/delete.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e581e5-b6f0-4d61-853e-10550130a31c\n",
+            "data": [
+                {
+                    "key": "data[type]",
+                    "value": "Discussion",
+                    "type": "text"
+                },
+                {
+                    "key": "data[id]",
+                    "value": "48",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407558062685
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "4df883f0-a3ad-2456-cc39-3aba0f6b94eb",
+            "name": "add.json (question example)",
+            "description": "post a question, poll or note",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/Discussions/add.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e581e5-b6f0-4d61-853e-10550130a31c\n",
+            "data": [
+                {
+                    "key": "data[Discussion][topic]",
+                    "value": "What is the discussion",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Discussion][body]",
+                    "value": "What is the problem here? lets check againasdasdasdsd",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Discussion][type]",
+                    "value": "question",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407550341298
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "54a08f15-218d-f952-3f6c-4170ed1f83fd",
+            "name": "togglefold.json",
+            "description": "Fold or Unfold a discussion",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/Discussions/togglefold.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e581e5-b6f0-4d61-853e-10550130a31c\n",
+            "data": [
+                {
+                    "key": "data[id]",
+                    "value": "49",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407560491944
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "7534f480-452d-f539-cce2-940194813525",
+            "name": "setGamificationVote.json (Reply example)",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/Discussions/setGamificationVote.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e581e5-b6f0-4d61-853e-10550130a31c\n",
+            "data": [
+                {
+                    "key": "id",
+                    "value": "15",
+                    "type": "text"
+                },
+                {
+                    "key": "type",
+                    "value": "Reply",
+                    "type": "text"
+                },
+                {
+                    "key": "vote",
+                    "value": "co",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407566643362
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "9e57497c-6822-f75f-3107-c9a0d34b14a2",
+            "name": "getdiscussions.json (folded example)",
+            "description": "get all paginated discussions, or just the folded ones",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/Discussions/getdiscussions.json?folded=true&page=1",
+            "method": "GET",
+            "headers": "X-AuthTokenHeader: 53e581e5-b6f0-4d61-853e-10550130a31c\n",
+            "data": [
+                {
+                    "key": "data[Discussion][topic]",
+                    "value": "What is the discussion",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Discussion][body]",
+                    "value": "the body will contain data pushed from ckeditor such as <b>this is bold</b>",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Discussion][type]",
+                    "value": "note",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407553336236
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "a9a657c9-3176-9030-fffa-7bedf72cfe39",
+            "name": "add.json (poll example)",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/Discussions/add.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e6bee6-e3c0-4c94-9e1b-0fa70130a31c\n",
+            "data": [
+                {
+                    "key": "data[Discussion][topic]",
+                    "value": "Topic of the poll",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Discussion][body]",
+                    "value": "Description of the Poll",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Discussion][type]",
+                    "value": "poll",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Pollchoice][0][choice]",
+                    "value": "this is a choice of the poll to vote on - choice1",
+                    "type": "text"
+                },
+                {
+                    "key": "data[Pollchoice][1][choice]",
+                    "value": "this is a choice of the poll to vote on - choice2",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407631178837
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "d54ba3c6-337e-a268-6fc3-9b2bd774fa37",
+            "name": "setPollVote.json",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/Discussions/setPollVote.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e6bec5-b38c-401a-bf0c-0fa60130a31c\n",
+            "data": [
+                {
+                    "key": "pollchoice_id",
+                    "value": "33",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407631204667
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "d6a7d719-ab52-e40b-a4ef-0724dea103fe",
+            "name": "getdiscussions.json",
+            "description": "",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/13/Discussions/getdiscussions.json?page=1",
+            "method": "GET",
+            "headers": "X-AuthTokenHeader: 53e581e5-b6f0-4d61-853e-10550130a31c\n",
+            "data": [
+                {
+                    "key": "data[id]",
+                    "value": "49",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407560555593
+        },
+        {
+            "collectionId": "18f56bae-15e3-5e09-2683-06db60b8afa1",
+            "id": "fa4cf08c-3ed5-24c7-31ec-68adb27804a7",
+            "name": "setGamificationVote.json (Discussion example)",
+            "description": "cast a gamification vote on a Discussion or a Reply ",
+            "url": "http://localhost/pyoopil/pyoopil/Classrooms/Discussions/setGamificationVote.json",
+            "method": "POST",
+            "headers": "X-AuthTokenHeader: 53e59071-275c-4332-9ce3-10570130a31c\n",
+            "data": [
+                {
+                    "key": "id",
+                    "value": "37",
+                    "type": "text"
+                },
+                {
+                    "key": "type",
+                    "value": "Discussion",
+                    "type": "text"
+                },
+                {
+                    "key": "vote",
+                    "value": "co",
+                    "type": "text"
+                }
+            ],
+            "dataMode": "params",
+            "timestamp": 0,
+            "version": 2,
+            "time": 1407559890401
+        }
+    ],
+    "order": [
+        "4df883f0-a3ad-2456-cc39-3aba0f6b94eb",
+        "a9a657c9-3176-9030-fffa-7bedf72cfe39",
+        "2ae4856d-d542-4135-a38b-96d984d2bba1",
+        "d6a7d719-ab52-e40b-a4ef-0724dea103fe",
+        "9e57497c-6822-f75f-3107-c9a0d34b14a2",
+        "1c820f99-5fec-d0c5-d863-acb8b60dc615",
+        "460a5116-e6dd-db58-c4b6-401ed437bbb7",
+        "13b77092-2ad1-4f94-3f04-12b413c66d3d",
+        "fa4cf08c-3ed5-24c7-31ec-68adb27804a7",
+        "7534f480-452d-f539-cce2-940194813525",
+        "54a08f15-218d-f952-3f6c-4170ed1f83fd",
+        "d54ba3c6-337e-a268-6fc3-9b2bd774fa37"
+    ]
+}
